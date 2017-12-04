@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false">
+        <shape>
+            <solid android:color="@color/colorPrimary"/>
+            <corners
+                android:bottomLeftRadius="@dimen/shape_1dp"
+                android:topLeftRadius="@dimen/shape_1dp"
+                />
+            <stroke android:width="1dp" android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="@color/hotel_bg_color"/>
+            <stroke android:width="0.5dp" android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+
+</selector>

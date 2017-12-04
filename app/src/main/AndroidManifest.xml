@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.dmonline" >
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name="com.mytables.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.mytables.SplashActivity"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.mytables.UserLoginActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+        <!--新注册-->
+        <activity android:name="f.sky.flight.t.SearchFlightActivity"/>
+        <activity android:name="com.changeT.NewLoginT"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+        <activity android:name="f.sky.flight.t.OrderFlightActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+       <!--  end  -->
+
+        <activity android:name="com.mytables.HomeActivity"
+            />
+        <activity android:name="com.mytables.KefuActivity"/>
+        <activity android:name="com.mytables.UserActivity"/>
+        <activity android:name="f.sky.flight.t.SearchFlightListActivity"/>
+        <activity android:name="com.myviews.CityChoseActivity"
+                 android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+        <activity android:name="cn.skytrip.train.t.SearchTrainActivity"/>
+        <activity android:name="com.myviews.MyCalendarActivity"/>
+        <activity android:name="com.mytables.MainActivity"/>
+
+        <activity android:name="com.mytables.PsgDetailEditT"/>
+        <activity android:name="com.mytables.ConfigPasswordT"/>
+        <activity android:name="com.mytables.UserMessageT"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+        <activity android:name="cn.skytrip.train.t.TrainCityChoseT"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+        <activity android:name="cn.skytrip.train.t.TrainListActivity"/>
+        <activity android:name="cn.skytrip.train.t.TrainDetailT"/>
+        <activity android:name="cn.skytrip.train.t.OrderTrainT"/>
+        <activity android:name="donm.sky.hotel.t.HotelListT"/>
+        <activity android:name="donm.sky.hotel.t.HotelCityT"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+        <activity android:name="donm.sky.hotel.t.HotelSearchActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+        <activity android:name="donm.sky.hotel.t.HDetailT"/>
+        <activity android:name="donm.sky.hotel.t.HotelOrderDetailT"/>
+        <activity android:name="donm.sky.hotel.t.CommitHotelT"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+        <activity android:name="donm.sky.hotel.t.OrderHotelDetail"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            />
+        <activity android:name="donm.sky.hotel.t.OrderSucessT"/>
+        <activity android:name="com.myviews.CaldroidActivity"
+            />
+        <activity android:name="com.mytables.TravelT"/>
+    </application>
+
+</manifest>

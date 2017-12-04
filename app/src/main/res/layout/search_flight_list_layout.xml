@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/them_app_bg"
+    android:orientation="vertical"
+    tools:context="f.sky.flight.t.SearchFlightListActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_item_instans"
+        android:background="@color/them_color_blue"
+        >
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/app_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/flight_back_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/font_size_10"
+            >
+
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@mipmap/flight_goto_icon" />
+
+            <TextView
+                android:id="@+id/flight_from_station"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/font_size_10"
+                android:layout_toLeftOf="@+id/imageView13"
+                android:layout_toStartOf="@+id/imageView13"
+                android:text="北京"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/imageView13"
+                android:layout_toRightOf="@+id/imageView13"
+                android:text="上海"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/font_size_25"
+        android:background="@color/them_color_blue"
+        >
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="去程：11月15日共有100个航班"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_12" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

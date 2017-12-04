@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">DmOnline</string>
+    <string name="home">首页</string>
+    <string name="xingcheng">行程</string>
+    <string name="kefu">客服</string>
+    <string name="user">我的</string>
+    <string name="airport_txt">机票</string>
+    <string name="train_txt">火车票</string>
+    <string name="hotel_txt">酒店</string>
+    <string name="mytraval_txt">我的行程</string>
+
+    <string name="user_my_order">我的订单</string>
+    <string name="user_msg_txt">我的信息</string>
+    <string name="service_txt">东美客服</string>
+    <string name="my_company_txt">我的公司</string>
+    <string name="debit_note_msg">发票信息</string>
+    <string name="credentials_msg">我的证件</string>
+    <string name="common_use">常用旅客</string>
+    <string name="change_paw_use">更改密码</string>
+    <string name="oneway_txt">单程</string>
+    <string name="backway_txt">往返</string>
+    <string name="alert_no_net">无法连接,请检查你的网络</string>
+    <string name="alert_title_txt">提醒</string>
+    <string name="check_btn_txt">确定</string>
+    <string name="cancel_txt">取消</string>
+    <string name="login_process">正在登录...</string>
+    <string name="login_result_fail">登入失败</string>
+    <string name="loading_process">努力加载中...</string>
+    <string name="loading_back_msg">查询返程...</string>
+    <string name="delete_psg_fail_txt">删除常旅客失败</string>
+    <string name="delete_psg_success_txt">删除常旅客成功</string>
+
+    <string name="save_paw">记住我的账号和密码</string>
+    <string name="query_fail_txt">查询失败</string>
+    <string name="query_no_result_txt">没有查询到的结果</string>
+    <string name="flight_dept_txt">起：</string>
+    <string name="flight_arr_txt">降：</string>
+    <string name="flight_condition_query_result">航班</string>
+    <string name="cabin_count_A">充裕</string>
+    <string name="cabin_count_little">紧张</string>
+    <string name="cabin_count_number">张</string>
+    <string name="book_order_process_txt">订单提交中...</string>
+    <string name="book_order_fail_txt">订单提交失败</string>
+    <string name="wirte_order_txt">填写订单</string>
+    <string name="org_dst_airport_txt">起降机场：</string>
+    <string name="org_dst_time_txt">起降时间：</string>
+    <string name="cabin_desc">仓位信息</string>
+    <string name="cabin_price">票价</string>
+    <string name="cabin_discount">舱位：</string>
+    <string name="cabin_price_txt">价格：</string>
+    <string name="cabin_fuel_tax_txt">燃油：</string>
+    <string name="cabin_airport_tax_txt">机建：</string>
+    <string name="delete_psg_txt">删除</string>
+    <string name="show_more_txt">显示更多</string>
+    <string name="add_contact_txt">新增</string>
+    <string name="new_btn_txt">新增常旅客</string>
+    <string name="edit_btn_txt">编辑</string>
+    <!-- 以下用于存放SharedPreferences的Key -->
+    <string name="preferences_current_tab">cnblogs_start_tab</string>
+    <!--以下用于存放SharedPreferences的Key-->
+    <string name="preferences_key">currentTab</string>
+    <string name="complete_txt">完成</string>
+    <string name="refund_info_txt">退票：</string>
+    <string name="change_info_txt">改签：</string>
+    <string name="ei_info_txt">签转：</string>
+    <string name="order_tourist_txt">乘机人信息</string>
+    <string name="select_tourist_btn_txt">选择乘机人</string>
+    <string name="select_cost_center_txt">成本中心</string>
+    <string name="select_deliver_address_txt">送票地址</string>
+    <string name="select_lowest_reason_txt">未选最低价原因</string>
+    <string name="select_pay_type_txt">选择支付方式</string>
+    <string name="select_click_txt">点击这里选择</string>
+    <string name="cabin_count">余票信息</string>
+    <string name="cabin_flight_desc">退改签</string>
+    <string name="cabin_flight_book">订票</string>
+    <string name="flight_title_txt">航班信息</string>
+    <string name="tel_book_txt">电话</string>
+    <string name="login_pwd_err">用户名密码不正确</string>
+    <string name="order_detail_txt">订单详情</string>
+    <string name="order_check_txt">确认订单</string>
+    <string name="apply_audit_txt">审核订单</string>
+    <string name="order_manager_txt">我的订单</string>
+    <string name="person_center_txt">个人中心</string>
+    <string name="help_txt">帮助</string>
+    <string name="flight_book_txt">机票预订</string>
+    <string name="config_pwd_txt">密码修改</string>
+    <string name="config_pagesize_txt">列表单页数</string>
+    <string name="psg_detail_txt">常旅客管理</string>
+    <string name="psg_edit_txt">修改旅客信息</string>
+    <string name="order_link_person_txt">联系人信息</string>
+    <string name="config_person_id_title">帐        号：</string>
+    <string name="config_person_name_title">姓        名：</string>
+    <string name="config_person_nickname_title">昵        称：</string>
+    <string name="psg_name_txt_title">真实姓名：</string>
+    <string name="config_person_email_title">邮        箱：</string>
+    <string name="config_person_mobile_title">手        机：</string>
+    <string name="config_person_idNumber_title">证件号码：</string>
+    <string name="config_person_idType_title">证件类型：</string>
+    <string name="order_total_org_price_txt">订单总价：</string>
+    <string name="order_total_price_txt">应付金额：</string>
+    <string name="order_apply_audit_txt">审核邮箱：</string>
+    <string name="edit_text_hint">点击这里输入</string>
+    <string name="project_nub_sec">项目编号</string>
+    <string name="order_apply_audited_txt">审核人：</string>
+    <string name="select_mail_type_txt">选择邮箱类型</string>
+    <string name="broke_rule_reason_txt">超标原因</string>
+    <string name="change_user_info_err">修改信息出错</string>
+    <string name="change_info_success">信息修改成功,下次登录请用新户信息登录</string>
+    <string name="pwd_error">原密码输入错误,请检查大小写</string>
+    <string name="new_pwd_error">两次新密码输入不一致</string>
+    <string name="config_info_change_txt">个人信息修改</string>
+    <string name="add_psg_txt">新增旅客信息</string>
+    <string name="update_psg_info_err">旅客信息更新出错</string>
+    <string name="edit_psg_txt">修改旅客信息</string>
+    <string name="h_name">输入查询关键字</string>
+    <string name="h_price">价格/星级</string>
+    <string name="h_search">查 询</string>
+    <string name="h_outdata">离店日期</string>
+    <string name="h_enterdate">入住日期</string>
+    <string name="kefu_txt">国内机票,火车票,酒店预订，退改签等问题咨询:\n点击下面的问题找到你想要的答案：</string>
+    <string name="kefu_piao_txt">1.机票,酒店,火车票相关问题</string>
+    <string name="qianzheng_baoxian_txt">2.签证，保险，租车办理</string>
+    <string name="dingzhi_txt">3.定制旅游产品</string>
+    <string name="huizhan_txt">4.会务会展</string>
+    <string name="jieson_vip">5.机场接送机及VIP休息室服务</string>
+    <string name="one_answer">点击拨打021-4006688868咨询</string>
+    <string name="four_answer">点击拨打13817530345或13701744836</string>
+    <string name="five_answer">点击拨打13816062780</string>
+    <string name="companyMobil">021-4006688868</string>
+    <string name="fax">86-21-64675679</string>
+    <string name="companyphone">13817530345</string>
+    <string name="broke_rule_txt">违反政策：</string>
+    <string name="resend_mail_txt">重发审核邮件</string>
+    <string name="emergency_ticket_txt">紧急出票</string>
+    <string name="pay_btn_txt">支付</string>
+    <string name="pay_user_txt">个人支付</string>
+    <string name="pay_company_txt">公司支付</string>
+    <string name="rensend_mail_title_txt">确认审核邮箱</string>
+    <string name="apply_status_cancel_txt">拒绝</string>
+    <string name="apply_status_pass_txt">通过</string>
+    <string name="order_status_txt">订单状态：</string>
+    <string name="apply_status_txt">申请单状态：</string>
+    <string name="operate_fail_txt">操作失败</string>
+    <string name="operate_success_txt">操作成功</string>
+    <string name="cabin_isRule_txt">符合</string>
+    <string name="cabin_isNotRule_txt">不符</string>
+    <string name="emergency_ticket_title_txt">填写紧急出票原因</string>
+    <string name="login_username">账号:</string>
+    <string name="login_pwd">密码:</string>
+    <string name="login_txt">登录</string>
+
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+
+
+    <item name="tag_id" type="string"></item>
+    <item name="tag_title" type="string"></item>
+
+
+
+
+
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/main_tab_top"
+        style="@style/layout_title" >
+
+        <TextView
+            style="@style/text_view_title"
+            android:layout_gravity="center"
+            android:text="@string/config_pwd_txt" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_tab_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main_tab_top"
+        android:background="@mipmap/all_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/shape_rectangle_white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/login_username_layout"
+                    style="@style/one_line_padding_style" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_size_18"
+                        android:text="原密码：" />
+
+                    <EditText
+                        android:id="@+id/login_pwd_txt"
+                        style="@style/edit_text_no_boder"
+                        android:layout_marginLeft="10dip"
+                        android:hint="@string/edit_text_hint"
+                        android:password="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/one_line_color_layout_style"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip" />
+
+                <LinearLayout
+                    android:id="@+id/login_pwd_layout"
+                    style="@style/one_line_padding_style" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_size_18"
+                        android:text="新密码：" />
+
+                    <EditText
+                        android:id="@+id/new_pwd_txt"
+                        style="@style/edit_text_no_boder"
+                        android:layout_marginLeft="10dip"
+                        android:hint="@string/edit_text_hint"
+                        android:password="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/one_line_color_layout_style"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip" />
+
+                <LinearLayout
+                    style="@style/one_line_padding_style" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_size_18"
+                        android:text="再次新密码：" />
+
+                    <EditText
+                        android:id="@+id/pwd_again_txt"
+                        style="@style/edit_text_no_boder"
+                        android:layout_marginLeft="10dip"
+                        android:hint="@string/edit_text_hint"
+                        android:password="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/check_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height_45"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dip"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="@color/white"
+                android:background="@drawable/bt_bgd"
+                android:layout_margin="@dimen/font_size_20"
+                android:text="@string/check_btn_txt" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:background="#BDBDBD"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.00"/>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/line_height_03"
+               android:background="@color/light_gray"
+               />
+        <RadioGroup
+            android:id="@+id/clientGroup"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom">
+            <RadioButton
+                android:layout_marginTop="1.0dip"
+                android:text="首页"
+                android:drawableTop="@drawable/tab_home_select"
+                android:id="@+id/TabHome"
+                style="@style/main_tab_bottom"/>
+
+            <RadioButton
+                android:layout_marginTop="1.0dip"
+                android:text="行程"
+                android:drawableTop="@drawable/tab_xingcheng_select"
+                android:id="@+id/TabXingC"
+                style="@style/main_tab_bottom"/>
+
+            <RadioButton
+                android:layout_marginTop="1.0dip"
+                android:text="客服"
+                android:drawableTop="@drawable/tab_kefu_select"
+                android:id="@+id/TabKeF"
+                style="@style/main_tab_bottom"/>
+
+            <RadioButton
+                android:layout_marginTop="1.0dip"
+                android:text="我的"
+                android:drawableTop="@drawable/tab_user_center"
+                android:id="@+id/Tabuser"
+                style="@style/main_tab_bottom"/>
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>

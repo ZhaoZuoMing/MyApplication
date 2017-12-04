@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="train_bg_color">#339966</color>
+    <color name="hotel_bg_color">#6666FF</color>
+    <color name="black">#000000</color>
+    <color name="gray_color">#2b2b2b</color>
+    <color name="cadender_bg_color">#ffeeeeee</color>
+    <color name="light_gray">#FFB4B4B4</color>
+    <color name="listview_driver">#eeeeee</color>
+    <color name="green">#e581ff02</color>
+    <color name="bg">#4d4d4d</color>
+    <color name="violate_can_order_bg">#f0f9f4</color>
+    <color name="violate_can_yellow_bg">#fffbf3</color>
+    <color name="violate_can_yellow_solid">#fac34e</color>
+    <color name="violate_canot_order_bg">#faeaea</color>
+    <color name="violate_canot_order_solid">#f55151</color>
+
+    <!-- pop窗口背景 -->
+    <color name="popbg">#A0000000</color>
+    <color name="flight_title_txt_color">#0b1f7f</color>
+    <color name="flight_price_color">#FF3333</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#0000ff</color>
+    <color name="chengse">#ff9900</color>
+    <color name="flight_line_blue_color">#9cb7da</color>
+    <color name="flight_green_txt_color">#009900</color>
+    <color name="flight_bg_color">#e3e7fb</color>
+    <color name="flight_blue_txt_color">#0b1f7f</color>
+    <color name="flight_gray_txt_color">#666666</color>
+    <color name="main_color_gray">#aeaeae</color>
+    <color name="main_color_yellow">#ea5903</color>
+    <color name="them_color_blue">#1296db</color>
+    <color name="them_press_blue">#2ba9ea</color>
+    <color name="them_app_bg">#e1dfe8</color>
+    <color name="them_cabin_item">#fcf7f7f7</color>
+
+
+
+</resources>

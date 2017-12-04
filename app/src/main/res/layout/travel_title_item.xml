@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:background="@mipmap/travel_title_bg"
+        >
+        <TextView
+            android:id="@+id/d_item_weday"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:text="周四"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18"
+            />
+        <TextView
+            android:id="@+id/d_item_travel_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5月27日"
+            android:layout_toRightOf="@+id/d_item_weday"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray_color"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/font_size_18"
+            />
+    </RelativeLayout>
+</LinearLayout>

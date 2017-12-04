@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+   <include layout="@layout/app_title_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--单程航班-->
+          <include
+              layout="@layout/tickets_detail_layout"/>
+
+            <Button
+                android:id="@+id/check_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height_45"
+                android:background="@drawable/bt_bgd"
+                android:textSize="@dimen/font_size_20"
+                android:text="确 定"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/font_size_20"
+                android:layout_marginLeft="@dimen/title_bar_height_45"
+                android:layout_marginRight="@dimen/title_bar_height_45"
+                android:layout_marginBottom="@dimen/title_bar_height_45"
+                />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

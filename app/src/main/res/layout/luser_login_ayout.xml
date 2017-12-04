@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/all_background"
+    >
+
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="140dp"
+         android:layout_marginTop="100dp"
+         >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/logo_in_login"
+            android:id="@+id/imageView7"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="登录 Dongmei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_18"
+            android:id="@+id/textView3"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/imageView7"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:orientation="vertical"
+           android:layout_marginTop="@dimen/font_size_10"
+            android:background="@drawable/shape_rectangle_white"
+            android:layout_marginLeft="@dimen/font_size_20"
+            android:layout_marginRight="@dimen/font_size_20"
+            >
+            <EditText
+                android:id="@+id/edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="@dimen/font_size_20"
+                android:hint="Donmei  ID"
+                android:layout_margin="3dp"
+                android:background="@color/transparent"
+                />
+            <TextView
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/light_gray"
+                />
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:paddingLeft="@dimen/font_size_20"
+                android:hint="密码"
+                android:background="@color/transparent"
+                android:inputType="textPassword"
+                />
+
+
+        </LinearLayout>
+
+             <Button
+                 android:id="@+id/btn_user_login"
+                 android:layout_width="match_parent"
+                 android:layout_height="45dp"
+                 android:background="@drawable/bt_bgd"
+                 android:layout_marginLeft="50dp"
+                 android:layout_marginRight="50dp"
+                 android:layout_marginTop="45dp"
+                 android:text="登 录"
+                 android:onClick="userLoginclick"
+                 android:textSize="@dimen/font_size_16"
+                 android:textColor="@color/white"
+                 />
+
+
+</LinearLayout>

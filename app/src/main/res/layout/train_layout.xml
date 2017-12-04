@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/select_color_white"
+    >
+    <include layout="@layout/app_title_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height_45"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        >
+
+
+        <TextView
+            android:text="火车票"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@mipmap/train_head_bg"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/shape_rectangle_white"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="@dimen/font_size_10"
+        android:layout_marginRight="@dimen/font_size_10"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="@dimen/shape_1dp"
+            android:layout_marginLeft="@dimen/shape_1dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src ="@mipmap/train_icon"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/font_size_10"
+                android:id="@+id/train_img_icon" />
+            <!--               始发地                 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/train_lay_bg"
+                android:layout_toLeftOf="@+id/train_img_icon"
+                android:layout_toStartOf="@+id/train_img_icon"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:text="出发城市"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_16"
+                    android:textColor="@color/bg"
+                    android:id="@+id/tr1" />
+                 <TextView
+                     android:id="@+id/train_start_city"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:text="上海虹桥"
+                     android:textSize="@dimen/font_size_20"
+                     android:layout_marginTop="@dimen/font_size_10"
+                     android:layout_marginBottom="@dimen/font_size_10"
+                     android:textColor="@color/black"
+                     />
+            </LinearLayout>
+            <!--终点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/train_img_icon"
+                android:layout_marginRight="@dimen/font_size_16"
+                android:background="@mipmap/train_right_bg"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/train_img_icon">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/bg"
+                   android:layout_marginRight="3dp"
+                   android:text="到达城市"
+                   android:textSize="@dimen/font_size_16"
+                   android:gravity="right"
+                   />
+                  <TextView
+                      android:id="@+id/train_end_city"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:textColor="@color/black"
+                      android:textSize="@dimen/font_size_20"
+                      android:layout_marginRight="5dp"
+                      android:layout_marginTop="@dimen/font_size_10"
+                      android:gravity="right"
+                      android:text="北京南"
+                      />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/train_arrow_lay"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@mipmap/train_date_bg"
+            android:layout_marginRight="@dimen/font_size_16"
+            android:layout_marginLeft="@dimen/font_size_16"
+            android:layout_marginTop="@dimen/font_size_16"
+            android:orientation="horizontal"
+            >
+
+            <!-- -->
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+             android:layout_weight="1"
+
+            >
+            <TextView
+                android:text="去程日期"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_16"
+                android:textColor="@color/bg"
+                android:id="@+id/tr3" />
+            <TextView
+                android:id="@+id/train_date_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2016年11月12日"
+                android:textSize="@dimen/font_size_16"
+                android:layout_marginTop="@dimen/font_size_16"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/arrow_right"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/imageView" />
+
+                <TextView
+                    android:text="次日"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/imageView"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/imageView"
+                    android:id="@+id/textView5" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height_45"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bt_bgd"
+        android:onClick="searchTrainTickets"
+        android:text="查 询"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_18"
+        android:id="@+id/train_tickets_btn" />
+
+
+</LinearLayout>

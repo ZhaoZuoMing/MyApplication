@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height_45"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/app_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/psg_back_btn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18"
+            android:text="@string/psg_detail_txt" />
+
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="@string/edit_btn_txt"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/train_shape_right"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_size_16"
+            android:layout_marginRight="@dimen/font_size_10"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/main_tab_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main_tab_top"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@mipmap/all_background" >
+
+        <ListView
+            android:id="@+id/psg_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="75dp"
+            android:background="@mipmap/all_background"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/transparent"
+            android:dividerHeight="1px"
+            android:fadingEdge="none" />
+
+        <Button
+            android:id="@+id/new_psg_btn"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:layout_width="match_parent"
+            android:background="@drawable/bt_bgd"
+            android:layout_gravity="bottom"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/font_size_18"
+            android:text="@string/new_btn_txt" />
+    </FrameLayout>
+
+</LinearLayout>

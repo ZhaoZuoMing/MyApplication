@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hotel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/all_background"
+    >
+    <!--加入标题栏-->
+
+
+
+     <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:background="@mipmap/hotel_head_bg"
+         android:layout_marginTop="@dimen/title_bar_height_45"
+       />
+    <include layout="@layout/app_title_bar"/>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@drawable/shape_rectangle_white"
+         android:orientation="vertical"
+         android:layout_marginLeft="@dimen/font_size_10"
+         android:layout_marginRight="@dimen/font_size_10"
+         android:layout_marginTop="160dp"
+         android:layout_marginBottom="@dimen/user_item_instans"
+         >
+
+         <LinearLayout
+             android:id="@+id/wantto_citiy_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:layout_marginTop="@dimen/font_size_10"
+             android:onClick="wanttoCitiyClick"
+            >
+
+             <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/hotel_height_70"
+             android:orientation="vertical"
+                 android:layout_weight="1"
+             android:layout_marginLeft="@dimen/font_size_10"
+              >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="目的地"
+                 android:layout_marginTop="@dimen/font_size_10"
+                 />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="上海"
+                     android:id="@+id/hotel_destination_txt"
+                     android:textSize="@dimen/font_size_20"
+                     android:textColor="@color/black"
+                     android:layout_marginTop="@dimen/font_size_10"
+                     />
+
+             </LinearLayout>
+
+             <RelativeLayout
+                 android:id="@+id/hotel_destination_rey"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 >
+                 <ImageView
+                     android:layout_width="17dp"
+                     android:layout_height="17dp"
+                     android:src="@mipmap/arrow_right"
+                     android:layout_centerVertical="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentEnd="true"
+                     android:layout_marginRight="17dp"
+                     android:layout_marginEnd="17dp"
+                     android:id="@+id/imageView2" />
+             </RelativeLayout>
+
+        </LinearLayout>
+
+         <View
+             android:id="@+id/v12"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/line_height"
+             android:background="@color/light_gray"
+             android:layout_marginLeft="@dimen/font_size_10"
+             android:layout_marginRight="@dimen/font_size_10"
+             />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/hotel_height_70"
+              android:orientation="horizontal"
+              >
+              <!--入住日期-->
+              <LinearLayout
+                  android:id="@+id/checkin_date_lay"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_weight="1"
+                  android:layout_marginLeft="@dimen/font_size_10"
+                  android:onClick="checkInDateClick"
+                  >
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/font_size_10"
+                      android:text="@string/h_enterdate"
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/hotel_checkin_date"
+                      android:textSize="@dimen/font_size_18"
+                      android:textColor="@color/black"
+                      android:layout_marginTop="@dimen/font_size_10"
+                      />
+              </LinearLayout>
+
+              <View
+                  android:id="@+id/v10"
+                  android:layout_width="@dimen/line_height"
+                  android:layout_height="match_parent"
+                  android:background="@color/light_gray"
+                  />
+              <!-- 离店 日期 -->
+              <LinearLayout
+                  android:id="@+id/check_out_lay"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:layout_weight="1"
+                  android:layout_marginLeft="@dimen/font_size_10"
+                  android:onClick="checkOutDateClick"
+                  >
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/font_size_10"
+                      android:text="@string/h_outdata"
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/hotel_checkout_date"
+                      android:textSize="@dimen/font_size_18"
+                      android:textColor="@color/black"
+                      android:layout_marginTop="@dimen/font_size_10"
+                      />
+
+              </LinearLayout>
+
+          </LinearLayout>
+         <View
+             android:id="@+id/v9"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/line_height"
+             android:background="@color/light_gray"
+             android:layout_marginRight="@dimen/font_size_10"
+             android:layout_marginLeft="@dimen/font_size_10"
+             />
+         <!--关键字，位置，酒店名-->
+         <RelativeLayout
+             android:id="@+id/hotel_editname_lay"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/title_bar_height_45"
+             android:orientation="horizontal"
+             android:layout_marginLeft="@dimen/font_size_10"
+             android:onClick="hotelEditNameClick"
+             >
+             <EditText
+                 android:id="@+id/hotel_edit_name"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_centerVertical="true"
+                  android:hint="@string/h_name"
+                  android:layout_marginLeft="5dp"
+                 android:textSize="@dimen/font_size_16"
+                  android:background="@color/white"
+                 android:layout_marginRight="@dimen/title_bar_height_45"
+                 />
+
+             <ImageView
+                 android:layout_width="17dp"
+                 android:layout_height="17dp"
+                 android:src="@mipmap/arrow_right"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginEnd="20dp"
+                 android:id="@+id/imageView3" />
+
+         </RelativeLayout>
+         <View
+             android:id="@+id/v5"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/line_height"
+             android:background="@color/light_gray"
+             android:layout_marginRight="@dimen/font_size_10"
+             android:layout_marginLeft="@dimen/font_size_10"
+             />
+         <!--价格，星级-->
+         <RelativeLayout
+             android:id="@+id/hotel_price_lay"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/title_bar_height_45"
+             android:layout_marginLeft="@dimen/font_size_10"
+             android:onClick="hotelPriceOnclick"
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:hint="@string/h_price"
+                 android:layout_centerVertical="true"
+                 android:textSize="@dimen/font_size_16"
+                 android:id="@+id/hotel_edit_price"
+                 android:layout_marginLeft="5dp"
+                 android:background="@drawable/transparent"
+                 android:layout_marginRight="@dimen/title_bar_height_45"
+                 />
+
+             <ImageView
+                 android:layout_width="17dp"
+                 android:layout_height="17dp"
+                 android:src="@mipmap/arrow_right"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_marginRight="20dp"
+                 android:layout_marginEnd="20dp"
+                 android:id="@+id/imageView5" />
+
+         </RelativeLayout>
+
+         <View
+             android:id="@+id/v2"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/line_height"
+             android:background="@color/light_gray"
+             android:layout_marginRight="@dimen/font_size_10"
+             android:layout_marginLeft="@dimen/font_size_10"
+             />
+         <!-- 酒店搜索-->
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/title_bar_height_45"
+             android:textColor="@color/white"
+             android:text="@string/h_search"
+             android:textSize="@dimen/font_size_18"
+             android:background="@drawable/bt_bgd"
+             android:layout_marginRight="@dimen/title_bar_height_45"
+             android:layout_marginLeft="@dimen/title_bar_height_45"
+             android:layout_marginTop="30dp"
+             android:onClick="hotelSearch"
+             />
+
+     </LinearLayout>
+
+</FrameLayout>

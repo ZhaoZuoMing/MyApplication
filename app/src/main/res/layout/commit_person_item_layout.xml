@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/p_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/font_size_16"
+            android:layout_marginLeft="@dimen/font_size_10"
+            android:text="张三"
+            />
+        <TextView
+            android:id="@+id/p_user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/gray_color"
+            android:layout_marginLeft="@dimen/font_size_16"
+            android:text="15211133366"
+            />
+    </RelativeLayout>
+</LinearLayout>

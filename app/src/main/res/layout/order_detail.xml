@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_tab_top"
+        style="@style/layout_title" >
+
+        <TextView
+            android:id="@+id/apply_or_order_title_txt"
+            style="@style/text_view_title"
+            android:text="@string/order_detail_txt" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/main_tab_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main_tab_top"
+        android:background="@mipmap/all_background" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/flight_bg_color" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/single_flight_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        style="@style/fill_one_line_padding_style"
+                        android:background="@drawable/section_bg_style"
+                        android:gravity="center_horizontal|center_vertical" >
+
+                        <TextView
+                            android:id="@+id/single_flight_info_date_txt"
+                            style="@style/single_line_title_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+
+                        <ImageView
+                            android:id="@+id/single_flight_airline_img"
+                            android:layout_width="25dip"
+                            android:layout_height="25dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip" />
+
+                        <TextView
+                            android:id="@+id/single_flight_airline_no_txt"
+                            style="@style/single_line_title_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/org_dst_airport_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+
+                        <TextView
+                            android:id="@+id/single_flight_dept_arr_city_txt"
+                            style="@style/single_line_title_txt"
+                            android:layout_marginLeft="5dip"
+                            android:textColor="@color/flight_gray_txt_color"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/one_line_color_layout_style" />
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/org_dst_time_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+
+                        <TextView
+                            android:id="@+id/single_flight_dept_arr_time_txt"
+                            style="@style/single_line_title_txt"
+                            android:layout_marginLeft="5dip"
+                            android:textColor="@color/flight_gray_txt_color"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/one_line_color_layout_style" />
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/cabin_price_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/single_flight_price_txt"
+                                style="@style/single_line_title_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_price_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/cabin_discount"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/single_flight_discount_txt"
+                                style="@style/single_line_title_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_price_color" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/one_line_color_layout_style" />
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/cabin_fuel_tax_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/single_flight_fuel_tax_txt"
+                                style="@style/single_line_title_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_price_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/cabin_airport_tax_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/single_flight_airport_tax_txt"
+                                style="@style/single_line_title_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_price_color" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/single_show_more_info_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout style="@style/one_line_color_layout_style" />
+
+                        <TextView
+                            style="@style/one_line_padding_style"
+                            android:gravity="center"
+                            android:text="@string/show_more_txt"
+                            android:textColor="@color/flight_blue_txt_color"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/single_flight_refund_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <LinearLayout style="@style/one_line_color_layout_style" />
+
+                        <LinearLayout style="@style/fill_mutiple_line_padding_style" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/refund_info_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/single_flight_refund_info_txt"
+                                style="@style/mutiple_line_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_gray_txt_color"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/one_line_color_layout_style" />
+
+                        <LinearLayout style="@style/fill_mutiple_line_padding_style" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/change_info_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/single_flight_change_info_txt"
+                                style="@style/mutiple_line_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_gray_txt_color"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/one_line_color_layout_style" />
+
+                        <LinearLayout style="@style/fill_mutiple_line_padding_style" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/ei_info_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/single_flight_ei_info_txt"
+                                style="@style/mutiple_line_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_gray_txt_color"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/single_broke_reason_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout style="@style/one_line_color_layout_style" />
+
+                            <LinearLayout style="@style/fill_mutiple_line_padding_style" >
+
+                                <TextView
+                                    style="@style/single_line_title_txt"
+                                    android:text="@string/broke_rule_txt"
+                                    android:textColor="@color/flight_blue_txt_color" />
+
+                                <TextView
+                                    android:id="@+id/single_flight_broke_role_txt"
+                                    style="@style/mutiple_line_txt"
+                                    android:layout_marginLeft="5dip"
+                                    android:textColor="@color/flight_gray_txt_color"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout style="@style/one_line_color_layout_style" />
+
+                            <LinearLayout style="@style/fill_mutiple_line_padding_style" >
+
+                                <TextView
+                                    style="@style/single_line_title_txt"
+                                    android:text="@string/broke_rule_reason_txt"
+                                    android:textColor="@color/flight_blue_txt_color" />
+
+                                <TextView
+                                    android:id="@+id/single_flight_broke_reason_txt"
+                                    style="@style/mutiple_line_txt"
+                                    android:layout_marginLeft="5dip"
+                                    android:textColor="@color/flight_gray_txt_color"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/round_flight_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        style="@style/fill_one_line_padding_style"
+                        android:background="@drawable/section_bg_style"
+                        android:gravity="center_horizontal|center_vertical" >
+
+                        <TextView
+                            android:id="@+id/round_flight_info_date_txt"
+                            style="@style/single_line_title_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+
+                        <ImageView
+                            android:id="@+id/round_flight_airline_img"
+                            android:layout_width="25dip"
+                            android:layout_height="25dip"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip" />
+
+                        <TextView
+                            android:id="@+id/round_flight_airline_no_txt"
+                            style="@style/single_line_title_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/org_dst_airport_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+
+                        <TextView
+                            android:id="@+id/round_flight_dept_arr_city_txt"
+                            style="@style/single_line_title_txt"
+                            android:layout_marginLeft="5dip"
+                            android:textColor="@color/flight_gray_txt_color"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/one_line_color_layout_style" />
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/org_dst_time_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+
+                        <TextView
+                            android:id="@+id/round_flight_dept_arr_time_txt"
+                            style="@style/single_line_title_txt"
+                            android:layout_marginLeft="5dip"
+                            android:textColor="@color/flight_gray_txt_color"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/one_line_color_layout_style" />
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/cabin_price_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/round_flight_price_txt"
+                                style="@style/single_line_title_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_price_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/cabin_discount"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/round_flight_discount_txt"
+                                style="@style/single_line_title_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_price_color" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/one_line_color_layout_style" />
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/cabin_fuel_tax_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/round_flight_fuel_tax_txt"
+                                style="@style/single_line_title_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_price_color" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/cabin_airport_tax_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/round_flight_airport_tax_txt"
+                                style="@style/single_line_title_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_price_color" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/round_show_more_info_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout style="@style/one_line_color_layout_style" />
+
+                        <TextView
+                            style="@style/one_line_padding_style"
+                            android:gravity="center"
+                            android:text="@string/show_more_txt"
+                            android:textColor="@color/flight_blue_txt_color"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/round_flight_refund_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <LinearLayout style="@style/one_line_color_layout_style" />
+
+                        <LinearLayout style="@style/fill_mutiple_line_padding_style" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/refund_info_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/round_flight_refund_info_txt"
+                                style="@style/mutiple_line_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_gray_txt_color"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/one_line_color_layout_style" />
+
+                        <LinearLayout style="@style/fill_mutiple_line_padding_style" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/change_info_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/round_flight_change_info_txt"
+                                style="@style/mutiple_line_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_gray_txt_color"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/one_line_color_layout_style" />
+
+                        <LinearLayout style="@style/fill_mutiple_line_padding_style" >
+
+                            <TextView
+                                style="@style/single_line_title_txt"
+                                android:text="@string/ei_info_txt"
+                                android:textColor="@color/flight_blue_txt_color" />
+
+                            <TextView
+                                android:id="@+id/round_flight_ei_info_txt"
+                                style="@style/mutiple_line_txt"
+                                android:layout_marginLeft="5dip"
+                                android:textColor="@color/flight_gray_txt_color"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/round_broke_reason_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout style="@style/one_line_color_layout_style" />
+
+                            <LinearLayout style="@style/fill_mutiple_line_padding_style" >
+
+                                <TextView
+                                    style="@style/single_line_title_txt"
+                                    android:text="@string/broke_rule_txt"
+                                    android:textColor="@color/flight_blue_txt_color" />
+
+                                <TextView
+                                    android:id="@+id/round_flight_broke_role_txt"
+                                    style="@style/mutiple_line_txt"
+                                    android:layout_marginLeft="5dip"
+                                    android:textColor="@color/flight_gray_txt_color"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout style="@style/one_line_color_layout_style" />
+
+                            <LinearLayout style="@style/fill_mutiple_line_padding_style" >
+
+                                <TextView
+                                    style="@style/single_line_title_txt"
+                                    android:text="@string/broke_rule_reason_txt"
+                                    android:textColor="@color/flight_blue_txt_color" />
+
+                                <TextView
+                                    android:id="@+id/round_flight_broke_reason_txt"
+                                    style="@style/mutiple_line_txt"
+                                    android:layout_marginLeft="5dip"
+                                    android:textColor="@color/flight_gray_txt_color"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        style="@style/fill_one_line_padding_style"
+                        android:background="@drawable/section_bg_style"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/order_tourist_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/select_psg_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@color/light_gray"
+                        android:dividerHeight="1px"
+                        android:fadingEdge="none" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/one_line_color_layout_style" />
+
+                <FrameLayout
+                    style="@style/fill_one_line_padding_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/single_line_title_txt"
+                        android:text="@string/order_total_org_price_txt"
+                        android:textColor="@color/flight_blue_txt_color" />
+
+                    <TextView
+                        android:id="@+id/org_total_price_txt"
+                        style="@style/single_line_title_txt"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/font_size_10"
+                        android:textColor="@color/red" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/show_corprate_price_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout style="@style/one_line_color_layout_style" />
+
+                    <FrameLayout
+                        style="@style/fill_one_line_padding_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/order_total_price_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+
+                        <TextView
+                            android:id="@+id/order_total_price_txt"
+                            style="@style/single_line_title_txt"
+                            android:layout_gravity="right"
+                            android:textColor="@color/red" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/one_line_color_layout_style" />
+
+                <FrameLayout
+                    style="@style/fill_one_line_padding_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/show_apply_or_order_txt"
+                        style="@style/single_line_title_txt"
+                        android:textColor="@color/flight_blue_txt_color" />
+
+                    <TextView
+                        android:id="@+id/apply_order_status_txt"
+                        style="@style/single_line_title_txt"
+                        android:layout_gravity="right"
+                        android:textColor="@color/red" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_audit_mail_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout style="@style/one_line_color_layout_style" />
+
+                    <LinearLayout
+                        style="@style/fill_one_line_padding_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/order_audit_mail_txt"
+                            style="@style/single_line_title_txt"
+                            android:text="@string/order_apply_audit_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/fill_one_line_padding_style"
+                        android:background="@drawable/section_bg_style"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/order_link_person_txt"
+                            android:textColor="@color/flight_blue_txt_color" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/config_person_name_title"
+                            android:textColor="@color/flight_blue_txt_color" />
+
+                        <TextView
+                            android:id="@+id/link_name_txt"
+                            style="@style/single_line_title_txt"
+                            android:layout_marginLeft="5dip"
+                            android:textColor="@color/flight_gray_txt_color" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/one_line_color_layout_style" />
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/config_person_mobile_title"
+                            android:textColor="@color/flight_blue_txt_color" />
+
+                        <TextView
+                            android:id="@+id/link_mobile_txt"
+                            style="@style/single_line_title_txt"
+                            android:layout_marginLeft="5dip"
+                            android:textColor="@color/flight_gray_txt_color" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/one_line_color_layout_style" />
+
+                    <LinearLayout style="@style/fill_one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/config_person_email_title"
+                            android:textColor="@color/flight_blue_txt_color" />
+
+                        <TextView
+                            android:id="@+id/link_email_txt"
+                            style="@style/single_line_title_txt"
+                            android:layout_marginLeft="5dip"
+                            android:textColor="@color/flight_gray_txt_color" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/one_line_color_layout_style" />
+
+                <LinearLayout
+                    android:id="@+id/order_status_change_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/order_status_cancel_btn"
+                        style="@style/text_button"
+                        android:background="@drawable/btn_empty_blue"
+                        android:text="@string/cancel_txt" />
+
+                    <Button
+                        android:id="@+id/order_resend_mail_btn"
+                        style="@style/text_button"
+                        android:layout_marginLeft="10dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:background="@drawable/btn_empty_blue"
+                        android:text="@string/resend_mail_txt" />
+
+                    <Button
+                        android:id="@+id/order_emergency_ticket_btn"
+                        style="@style/text_button"
+                        android:layout_marginLeft="10dip"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:background="@drawable/btn_empty_blue"
+                        android:text="@string/emergency_ticket_txt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_pay_btn_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/order_pay_btn"
+                        style="@style/text_button"
+                        android:background="@drawable/login_btn_style"
+                        android:text="@string/pay_btn_txt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/apply_status_change_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/apply_status_cancel_btn"
+                        style="@style/text_button"
+                        android:background="@drawable/btn_empty_blue"
+                        android:text="@string/apply_status_cancel_txt" />
+
+                    <Button
+                        android:id="@+id/apply_status_pass_btn"
+                        style="@style/text_button"
+                        android:layout_marginLeft="40dip"
+                        android:background="@drawable/btn_empty_blue"
+                        android:text="@string/apply_status_pass_txt" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</RelativeLayout>

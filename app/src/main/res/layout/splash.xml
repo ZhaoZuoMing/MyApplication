@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg" >
+
+    <ImageView
+        android:id="@+id/log_icon_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="188dp"
+        android:src="@mipmap/logo_in_login" />
+
+    <TextView
+        android:id="@+id/splash_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log_icon_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="东美在线旅行社"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:visibility="visible"
+        />
+
+    <TextView
+        android:id="@+id/splash_txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="满意差旅,全程满意"
+        android:textSize="14dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:text="Copright @2016 sky-trip.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/textView8" />
+
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+      <include layout="@layout/app_title_bar"/>
+
+    <FrameLayout
+        android:id="@+id/main_tab_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/all_background" >
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/config_info_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/shape_rectangle_white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        style="@style/one_line_padding_style"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/config_info_id_txt"
+                            style="@style/single_line_title_txt"
+                            android:text="@string/config_person_id_title" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/one_line_padding_style"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:id="@+id/config_info_name_txtview"
+                            style="@style/single_line_title_txt"
+                            android:text="@string/config_person_name_title" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/config_person_nickname_title" />
+
+                        <EditText
+                            android:id="@+id/config_info_nickname_txt"
+                            style="@style/edit_text_no_boder"
+                            android:layout_marginLeft="10dip"
+                            android:hint="@string/edit_text_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/one_line_color_layout_style"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip" />
+
+                    <LinearLayout style="@style/one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/config_person_mobile_title" />
+
+                        <EditText
+                            android:id="@+id/config_info_mobile_txt"
+                            style="@style/edit_text_no_boder"
+                            android:layout_marginLeft="10dip"
+                            android:hint="@string/edit_text_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/one_line_color_layout_style"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip" />
+
+                    <LinearLayout style="@style/one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/config_person_email_title" />
+
+                        <EditText
+                            android:id="@+id/config_info_email_txt"
+                            style="@style/edit_text_no_boder"
+                            android:layout_marginLeft="10dip"
+                            android:hint="@string/edit_text_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/one_line_color_layout_style"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip" />
+
+                    <LinearLayout style="@style/one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/config_person_idType_title" />
+
+                        <TextView
+                            android:id="@+id/config_info_idType_txt"
+                            style="@style/single_line_title_txt"
+                            android:layout_width="fill_parent"
+                            android:layout_marginLeft="10dip"
+                            android:layout_weight="1"
+                            android:hint="@string/select_click_txt"
+                            android:textColor="@color/flight_gray_txt_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/one_line_color_layout_style"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip" />
+
+                    <LinearLayout style="@style/one_line_padding_style" >
+
+                        <TextView
+                            style="@style/single_line_title_txt"
+                            android:text="@string/config_person_idNumber_title" />
+
+                        <EditText
+                            android:id="@+id/config_info_idNumber_txt"
+                            style="@style/edit_text_no_boder"
+                            android:layout_marginLeft="10dip"
+                            android:hint="@string/edit_text_hint" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/check_btn"
+                    style="@style/text_button_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/font_size_20"
+                    android:background="@drawable/bt_bgd"
+                    android:text="@string/check_btn_txt" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

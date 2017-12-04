@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:background="@color/popbg"
+    android:orientation="vertical"
+    >
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/title_bar_height_45"
+         android:background="@mipmap/shaixuan_bg"
+         >
+
+         <TextView
+             android:text="取消"
+             android:layout_width="100dp"
+             android:layout_height="match_parent"
+             android:layout_centerVertical="true"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:textSize="@dimen/font_size_16"
+             android:textColor="@color/white"
+             android:gravity="center"
+             android:id="@+id/btn_shaixuan_dismiss" />
+
+         <TextView
+             android:text="筛选"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_centerHorizontal="true"
+             android:textSize="@dimen/font_size_16"
+             android:textColor="@color/white"
+             android:id="@+id/btn_shaixuan_makesure11" />
+
+         <TextView
+             android:text="确定"
+             android:layout_width="100dp"
+             android:layout_height="match_parent"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentEnd="true"
+             android:gravity="center"
+             android:textSize="@dimen/font_size_16"
+             android:textColor="@color/white"
+             android:id="@+id/btn_shaixuan_makesure" />
+
+     </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+            <TextView
+                android:id="@+id/line01"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/font_size_20"
+                android:layout_marginRight="@dimen/font_size_10"
+                android:background="@color/light_gray"
+                android:layout_toLeftOf="@+id/textView10"
+                android:layout_toStartOf="@+id/textView10" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="车次类型"
+                android:id="@+id/textView10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/font_size_20"
+                android:layout_marginLeft="@dimen/font_size_10"
+                android:layout_toRightOf="@+id/textView10"
+                android:layout_toEndOf="@+id/textView10"
+                android:background="@color/light_gray"
+                android:id="@+id/textView11" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/train_shaixuan_gaotie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:paddingLeft="@dimen/font_size_10"
+                android:text="高铁(G/C)"
+                />
+            <CheckBox
+                android:id="@+id/train_shaixuan_donche"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:paddingLeft="@dimen/font_size_10"
+                android:text="动车(D)"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/train_shaixuan_putong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:paddingLeft="@dimen/font_size_10"
+                android:text="普通(Z/T/K)"
+                />
+            <CheckBox
+                android:id="@+id/train_shaixuan_qita"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:paddingLeft="@dimen/font_size_10"
+                android:text="其他(L/Y等)"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            >
+            <TextView
+                android:id="@+id/line02"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/font_size_20"
+                android:layout_marginRight="@dimen/font_size_10"
+                android:background="@color/light_gray"
+                android:layout_toLeftOf="@+id/textView101"
+                android:layout_toStartOf="@+id/textView101" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="出发时间"
+                android:id="@+id/textView101" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/font_size_20"
+                android:layout_marginLeft="@dimen/font_size_10"
+                android:layout_toRightOf="@+id/textView101"
+                android:layout_toEndOf="@+id/textView101"
+                android:background="@color/light_gray"
+                android:id="@+id/textView111" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/train_time0006"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:paddingLeft="@dimen/font_size_10"
+                android:text="00:00-06:00"
+                />
+            <CheckBox
+                android:id="@+id/train_time0012"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:paddingLeft="@dimen/font_size_10"
+                android:text="06:00-12:00"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/train_time1800"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:paddingLeft="@dimen/font_size_10"
+                android:text="12:00-18:00"
+                />
+            <CheckBox
+                android:id="@+id/train_time2400"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:paddingLeft="@dimen/font_size_10"
+                android:text="18:00-24:00"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/train_ticket_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/all_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+   <include layout="@layout/app_title_bar"/>
+
+   <include
+       layout="@layout/change_start_time"
+       />
+
+     <FrameLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <ListView
+             android:id="@+id/train_listview"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:divider="@color/transparent"
+             android:scrollbars="none"
+             android:dividerHeight="@dimen/line_height"
+             />
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_gravity="bottom"
+             >
+             <include
+                 android:id="@+id/shaixuan_lay"
+                 layout="@layout/train_shaixuan_item_layout"
+                 android:visibility="gone"
+                 />
+         <LinearLayout
+             android:id="@+id/t_list_bottom"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/title_bar_height_45"
+             android:background="@mipmap/shaixuan_bg"
+             android:layout_gravity="bottom"
+             android:orientation="horizontal"
+             >
+
+             <LinearLayout
+                 android:id="@+id/train_shaixuan_lay"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 >
+                 <ImageView
+                     android:layout_width="30dp"
+                     android:layout_height="29dp"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@mipmap/train_shaixuan_icon"
+                     />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="筛选"
+                     android:textColor="@color/white"
+                     android:gravity="center_horizontal"
+                     android:id="@+id/textView2" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/train_starttime_sort_lay"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 >
+                 <ImageView
+                     android:layout_width="35dp"
+                     android:layout_height="30dp"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@mipmap/train_time_sort"
+                     />
+                 <TextView
+                     android:id="@+id/train_start_sorttime_txt"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="时间"
+                     android:textColor="@color/white"
+                     android:gravity="center_horizontal"
+                     />
+             </LinearLayout>
+             <LinearLayout
+                 android:id="@+id/train_tlong_sort_lay"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 >
+
+                 <ImageView
+                     android:layout_width="35dp"
+                     android:layout_height="32dp"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@mipmap/time_long_sort"
+                     android:id="@+id/imageView8" />
+
+                 <TextView
+                     android:id="@+id/train_runtime_txt"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="耗时"
+                     android:textColor="@color/white"
+                     android:gravity="center_horizontal"
+                     />
+             </LinearLayout>
+             <LinearLayout
+                 android:id="@+id/train_price_sort_lay"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:layout_weight="1"
+                 android:visibility="gone"
+                 >
+                 <ImageView
+                     android:layout_width="35dp"
+                     android:layout_height="30dp"
+                     android:layout_gravity="center_horizontal"
+                     android:src="@mipmap/train_price_sort"
+                     />
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="价格"
+                     android:textColor="@color/white"
+                     android:gravity="center_horizontal"
+                     />
+             </LinearLayout>
+         </LinearLayout>
+         </LinearLayout>
+
+     </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

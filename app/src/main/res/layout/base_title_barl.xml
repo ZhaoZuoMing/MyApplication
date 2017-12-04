@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height_45"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height_45"
+        android:background="@color/them_color_blue">
+
+        <TextView
+            android:id="@+id/base_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="首页"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

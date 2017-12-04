@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="airport_array_data">
+        <item>全部航空公司</item>
+        <item>东方航空公司</item>
+        <item>国际航空公司</item>
+        <item>南方航空公司</item>
+        <item>上海航空公司</item>
+        <item>厦门航空公司</item>
+        <item>山东航空公司</item>
+        <item>四川航空公司</item>
+        <item>海南航空公司</item>
+        <item>深圳航空公司</item>
+    </string-array>
+    <string-array name="airline_code">
+        <item>ALL</item>
+        <item>MU</item>
+        <item>CA</item>
+        <item>CZ</item>
+        <item>FM</item>
+        <item>MF</item>
+        <item>SC</item>
+        <item>3U</item>
+        <item>HU</item>
+        <item>ZH</item>
+    </string-array>
+    <string-array name="airpot_array_time">
+        <item>-1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="hotel_array_level">
+        <item>不限</item>
+        <item>快捷连锁</item>
+        <item>三星/经济</item>
+        <item>三星/舒适</item>
+        <item>四星/高档</item>
+        <item>五星/豪华</item>
+    </string-array>
+
+    <string-array name="hotel_array_price">
+        <item>不限</item>
+        <item>￥150以下</item>
+        <item>￥150-300</item>
+        <item>￥301-450</item>
+        <item>￥451-600</item>
+        <item>￥601-1000</item>
+        <item>￥1000以上</item>
+        <item>￥1500以上</item>
+    </string-array>
+
+    <string-array name="room_num_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <!--<item>6</item>-->
+        <!--<item>7</item>-->
+        <!--<item>8</item>-->
+        <!--<item>9</item>-->
+        <!--<item>10</item>-->
+     </string-array>
+
+
+
+    <string-array name="years">
+        <item>2017年</item>
+        <item>2018年</item>
+        <item>2019年</item>
+        <item>2020年</item>
+        <item>2021年</item>
+        <item>2022年</item>
+        <item>2023年</item>
+        <item>2024年</item>
+        <item>2025年</item>
+        <item>2026年</item>
+        <item>2027年</item>
+        <item>2028年</item>
+        <item>2029年</item>
+        <item>2030年</item>
+        <item>2031年</item>
+        <item>2032年</item>
+        <item>2033年</item>
+        </string-array>
+
+    <string-array name="months">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <string-array name="int_months">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="cards">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="cards_type">
+        <item>IdentityCard</item>
+        <item>Passport</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

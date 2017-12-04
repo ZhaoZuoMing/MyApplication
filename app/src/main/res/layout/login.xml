@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_tab_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@id/main_tab_top"
+    android:background="@mipmap/all_background" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="60dip">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/logo_in_login" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/font_size_16"
+                    android:text="LoginDM"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/shape_rectangle_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/login_username_layout"
+                    style="@style/one_line_padding_style">
+
+                    <TextView
+                        style="@style/single_line_txt"
+                        android:focusable="false"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        style="@style/single_line_txt"
+                        android:layout_marginLeft="8dip"
+                        android:focusable="false"
+                        android:text="@string/login_username" />
+
+                    <EditText
+                        android:id="@+id/login_sign_txt"
+                        style="@style/edit_text_no_boder"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/one_line_color_layout_style" />
+
+                <LinearLayout
+                    android:id="@+id/login_pwd_layout"
+                    style="@style/one_line_padding_style">
+
+                    <TextView
+                        style="@style/single_line_txt"
+                        android:focusable="false"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        style="@style/single_line_txt"
+                        android:layout_marginLeft="8dip"
+                        android:text="@string/login_pwd" />
+
+                    <EditText
+                        android:id="@+id/login_pwd_txt"
+                        style="@style/edit_text_no_boder"
+                        android:password="true"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/one_line_color_layout_style" />
+
+                <LinearLayout style="@style/one_line_padding_style">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <ImageButton
+                            android:id="@+id/save_password_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:src="@mipmap/check" />
+
+                        <TextView
+                            style="@style/text_button_small"
+                            android:layout_marginLeft="10dip"
+                            android:text="记住密码"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <ImageButton
+                            android:id="@+id/auto_login_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:src="@mipmap/uncheck" />
+
+                        <TextView
+                            style="@style/text_button_small"
+                            android:layout_marginLeft="10dip"
+                            android:baselineAligned="false"
+                            android:text="自动登录"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/bt_bgd"
+                android:onClick="userLoginclick"
+                android:text="@string/login_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

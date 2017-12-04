@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/them_app_bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_03"
+        android:background="@color/light_gray"
+        android:layout_marginTop="@dimen/font_size_20"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/font_size_16"
+            app:srcCompat="@mipmap/user_center_right" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/font_size_25"
+            android:layout_marginStart="@dimen/font_size_25"
+            app:srcCompat="@mipmap/user_center_head" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_head"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageView11"
+            android:layout_toRightOf="@+id/imageView11"
+            android:text="赵祚铭"
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView11"
+            android:layout_alignLeft="@+id/textView22"
+            android:layout_alignStart="@+id/textView22"
+            android:text="账号:T2G00210" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_03"
+        android:background="@color/light_gray"
+        />
+    <!--001-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_03"
+        android:background="@color/light_gray"
+        android:layout_marginTop="@dimen/font_size_20"
+        android:alpha="0.7"
+        />
+    <RelativeLayout
+        android:id="@+id/my_allorder_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_item_height"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/u_muorder_img"
+            android:layout_width="@dimen/font_size_25"
+            android:layout_height="@dimen/font_size_25"
+            app:srcCompat="@mipmap/u_myorder"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/font_size_28"
+            />
+
+        <TextView
+            android:id="@+id/user_my_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_item_left"
+            android:layout_marginStart="@dimen/user_item_left"
+            android:layout_toEndOf="@+id/u_muorder_img"
+            android:layout_toRightOf="@+id/u_muorder_img"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/gray_color"
+            android:text="@string/user_my_order" />
+
+        <ImageView
+            android:id="@+id/img01"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/font_size_16"
+            app:srcCompat="@mipmap/user_center_right" />
+    </RelativeLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/line_height_03"
+         android:background="@color/main_color_gray"
+         android:alpha="0.7"
+         />
+
+
+    <!--002-->
+
+    <RelativeLayout
+        android:id="@+id/my_message_lay"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/font_size_20"
+        android:layout_height="@dimen/user_item_height">
+        <ImageView
+            android:id="@+id/u_message_img"
+            android:layout_width="@dimen/font_size_25"
+            android:layout_height="@dimen/font_size_25"
+            app:srcCompat="@mipmap/u_message"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/font_size_28"
+            />
+
+        <TextView
+            android:id="@+id/user_msg_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_item_left"
+            android:layout_marginStart="@dimen/user_item_left"
+            android:layout_toEndOf="@+id/u_message_img"
+            android:layout_toRightOf="@+id/u_message_img"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/gray_color"
+            android:text="@string/user_msg_txt" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/font_size_16"
+            app:srcCompat="@mipmap/user_center_right" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_03"
+        android:background="@color/light_gray"
+        android:alpha="0.7"
+        />
+
+    <!--003 公司-->
+
+    <RelativeLayout
+        android:id="@+id/my_card_lay"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/user_item_height">
+
+        <ImageView
+            android:id="@+id/u_card_img"
+            android:layout_width="@dimen/font_size_25"
+            android:layout_height="@dimen/font_size_25"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/font_size_28"
+            app:srcCompat="@mipmap/u_idnumber" />
+
+        <TextView
+            android:id="@+id/credentials_msg_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_item_left"
+            android:layout_marginStart="@dimen/user_item_left"
+            android:layout_toEndOf="@+id/u_card_img"
+            android:layout_toRightOf="@+id/u_card_img"
+            android:text="@string/credentials_msg"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/gray_color" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/font_size_16"
+            app:srcCompat="@mipmap/user_center_right" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_03"
+        android:background="@color/light_gray"
+        android:alpha="0.7"
+        />
+
+    <RelativeLayout
+        android:id="@+id/my_company_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_item_height"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/u_company_img"
+            android:layout_width="@dimen/font_size_25"
+            android:layout_height="@dimen/font_size_25"
+            app:srcCompat="@mipmap/u_company"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/font_size_28"
+            />
+
+        <TextView
+            android:id="@+id/my_company_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_item_left"
+            android:layout_marginStart="@dimen/user_item_left"
+            android:layout_toEndOf="@+id/u_company_img"
+            android:layout_toRightOf="@+id/u_company_img"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/gray_color"
+            android:text="@string/my_company_txt" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/font_size_16"
+            app:srcCompat="@mipmap/user_center_right" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_03"
+        android:background="@color/light_gray"
+        android:alpha="0.7"
+        />
+
+    <!--004-->
+
+    <RelativeLayout
+        android:id="@+id/my_fapiao_lay"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/user_item_height">
+        <ImageView
+            android:id="@+id/u_fapiao_img"
+            android:layout_width="@dimen/font_size_25"
+            android:layout_height="@dimen/font_size_25"
+            app:srcCompat="@mipmap/u_fapiao"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/font_size_28"
+            />
+
+        <TextView
+            android:id="@+id/debit_note_sg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_item_left"
+            android:layout_marginStart="@dimen/user_item_left"
+            android:layout_toEndOf="@+id/u_fapiao_img"
+            android:layout_toRightOf="@+id/u_fapiao_img"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/gray_color"
+            android:text="@string/debit_note_msg" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/font_size_16"
+            app:srcCompat="@mipmap/user_center_right"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_03"
+        android:background="@color/light_gray"
+        android:alpha="0.7"
+        />
+    <RelativeLayout
+        android:id="@+id/my_traval_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_item_height"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/font_size_20"
+        >
+        <ImageView
+            android:id="@+id/u_traval_img"
+            android:layout_width="@dimen/font_size_25"
+            android:layout_height="@dimen/font_size_25"
+            app:srcCompat="@mipmap/u_traval"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/font_size_28"
+            />
+
+        <TextView
+            android:id="@+id/common_use_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_item_left"
+            android:layout_marginStart="@dimen/user_item_left"
+            android:layout_toEndOf="@+id/u_traval_img"
+            android:layout_toRightOf="@+id/u_traval_img"
+            android:textSize="@dimen/font_size_14"
+            android:textColor="@color/gray_color"
+            android:text="@string/common_use" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/font_size_16"
+            app:srcCompat="@mipmap/user_center_right" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height_03"
+        android:background="@color/main_color_gray"
+        android:alpha="0.7"
+        />
+</LinearLayout>

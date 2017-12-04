@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/them_app_bg"
+    >
+    <include layout="@layout/base_title_barl"/>
+   <com.myviews.IOSScrollView
+       android:id="@+id/ios_sc"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbarStyle="insideOverlay">
+       <LinearLayout
+           android:id="@+id/lay"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+           <include layout="@layout/person_center_halfdown" />
+       </LinearLayout>
+   </com.myviews.IOSScrollView>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:background="@mipmap/flight_head_bg"
+        >
+    <RelativeLayout
+        android:id="@+id/main_tab_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height_45"
+        >
+        <TextView
+            android:id="@+id/flight_query_condition"
+            style="@style/text_view_title"
+            android:text="上海虹桥 至  北京首都"
+            />
+        <ImageView
+            style="@style/app_back_btn"
+            android:id="@+id/flight_back_btn" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/head_flight_shape"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/font_size_10"
+                >
+                <TextView
+                    android:text="去程航班: 12月20日 周四"
+                    android:textStyle="bold"
+                    android:textColor="@color/chengse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_16"
+                    android:id="@+id/set_flight_date"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+          <FrameLayout
+            android:id="@+id/main_tab_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@mipmap/all_background"
+            >
+            <ListView
+                android:id="@+id/flight_result_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/transparent"
+                android:dividerHeight="@dimen/line_height"
+                android:fadingEdge="none" />
+        </FrameLayout>
+</LinearLayout>
+
+
+
+

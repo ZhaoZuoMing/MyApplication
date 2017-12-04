@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="联系人/其他信息"
+        android:textSize="@dimen/font_size_16"
+        android:layout_marginTop="@dimen/font_size_10"
+        android:layout_marginLeft="@dimen/font_size_20"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_rectangle_white"
+        android:layout_margin="@dimen/font_size_10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/nan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="姓名："
+                android:layout_marginLeft="@dimen/font_size_10"
+                android:textSize="@dimen/font_size_18"
+                android:layout_gravity="center_vertical"
+
+                />
+            <TextView
+                android:id="@+id/linkman_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                android:textSize="@dimen/font_size_16"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/font_size_10"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            android:layout_marginLeft="@dimen/font_size_10"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/nan01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="手机："
+                android:layout_marginLeft="@dimen/font_size_10"
+                android:textSize="@dimen/font_size_18"
+                android:layout_gravity="center_vertical"
+
+                />
+            <TextView
+                android:id="@+id/linkman_phone_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15302928373"
+                android:textSize="@dimen/font_size_16"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/font_size_10"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            android:layout_marginLeft="@dimen/font_size_10"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/nan03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="邮箱："
+                android:layout_marginLeft="@dimen/font_size_10"
+                android:textSize="@dimen/font_size_18"
+                android:layout_gravity="center_vertical"
+
+                />
+            <TextView
+                android:id="@+id/linkman_mail_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="zhaodongyao@map.com"
+                android:textSize="@dimen/font_size_16"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/font_size_10"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/nan05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="项目编号:"
+                android:layout_marginLeft="@dimen/font_size_10"
+                android:textSize="@dimen/font_size_18"
+                android:layout_gravity="center_vertical"
+
+                />
+            <EditText
+                android:id="@+id/project_number_edit"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:hint="请输入项目编号"
+                 android:textSize="@dimen/font_size_16"
+                 android:layout_gravity="center_vertical"
+                 android:textColor="@color/black"
+                android:paddingLeft="@dimen/font_size_20"
+                android:background="@mipmap/search_background"
+                android:layout_marginLeft="@dimen/font_size_10"
+                android:layout_margin="3dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            android:layout_marginLeft="@dimen/font_size_10"
+            />
+
+
+        <!--成本中心信息-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/nan04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="成本中心:"
+                android:layout_marginLeft="@dimen/font_size_10"
+                android:textSize="@dimen/font_size_18"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/linkman_center_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="100019991001"
+                android:textSize="@dimen/font_size_16"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/nan04"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/font_size_10"
+                />
+            <ImageView
+                android:id="@+id/im1h"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@mipmap/arrow_right"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/font_size_10"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            android:layout_marginLeft="@dimen/font_size_10"
+            />
+
+        <!--成本中心信息-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/nan14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="未选低价原因:"
+                android:layout_marginLeft="@dimen/font_size_10"
+                android:textSize="@dimen/font_size_18"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                  android:id="@+id/imh"
+                  android:layout_width="18dp"
+                  android:layout_height="18dp"
+                  android:background="@mipmap/arrow_right"
+                 android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/font_size_10"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/nocheck_lowprice_reasion_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" 只有全票价"
+                android:maxLength="10"
+                android:textSize="@dimen/font_size_16"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/nan14"
+                 />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            android:layout_marginLeft="@dimen/font_size_10"
+            />
+    </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/title_bar_height_45"
+              android:layout_marginTop="@dimen/font_size_10"
+              android:background="@color/light_gray"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+
+              >
+          <TextView
+              android:id="@+id/check_pay_btn"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/title_bar_height_45"
+              android:textColor="@color/black"
+              android:text="*选择支付方式"
+              android:gravity="center_vertical"
+              android:textSize="@dimen/font_size_18"
+              android:layout_marginLeft="@dimen/font_size_10"
+              />
+          </LinearLayout>
+          <CheckBox
+              android:id="@+id/makesure_pay_btn"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/title_bar_height_45"
+              android:textColor="@color/black"
+              android:text="公司支付"
+              android:checked="true"
+              android:background="@drawable/shape_radius_1px"
+              android:textSize="@dimen/font_size_16"
+              android:layout_marginTop="@dimen/font_size_10"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:layout_marginBottom="@dimen/font_size_20"
+              />
+      </LinearLayout>
+
+</LinearLayout>

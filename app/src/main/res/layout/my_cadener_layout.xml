@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/all_background"
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/title_bar_height_45"
+       android:background="@color/colorPrimary"
+       >
+
+       <TextView
+           android:text="日期选择"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true"
+           android:textColor="@color/white"
+           android:textSize="@dimen/font_size_16"
+           android:id="@+id/today_time" />
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height_45"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:text="2016年11月11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/popupwindow_calendar_month" />
+
+        <Button
+            android:layout_width="12dp"
+            android:layout_height="18dp"
+            android:background="@drawable/bt_calendar_last"
+            android:id="@+id/btn_cadenerlast_last"
+            android:layout_marginRight="28dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/popupwindow_calendar_month"
+             />
+
+
+        <Button
+            android:id="@+id/btn_next_calendar"
+            android:layout_width="12dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@+id/popupwindow_calendar_month"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_calendar_next"
+            />
+    </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#ffeeeeee"
+           android:layout_marginRight="5dp"
+           android:layout_marginLeft="5dp"
+           >
+           <com.myviews.KCalendar
+               android:id="@+id/kcalendar_for_id"
+               android:layout_width="match_parent"
+               android:layout_height="350dp"/>
+
+       </LinearLayout>
+
+
+
+            <Button
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height_45"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bt_bgd"
+                android:id="@+id/cadender_checktrue_btn" />
+
+</LinearLayout>

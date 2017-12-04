@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/bar_t"
+        layout="@layout/app_title_bar"/>
+
+    <com.myviews.IOSScrollView
+        android:id="@+id/Order_sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_below="@+id/bar_t"
+        android:background="@color/them_app_bg"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/order_flight_item" />
+            <include layout="@layout/contact_flight_item_lay" />
+            <include
+                layout="@layout/user_message_item_layout"/>
+             <include layout="@layout/cost_center_item"/>
+        </LinearLayout>
+    </com.myviews.IOSScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_color"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:text="¥"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/flight_Order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/font_size_10"
+            android:layout_toEndOf="@+id/textView24"
+            android:layout_toRightOf="@+id/textView24"
+            android:text="2100"
+            android:textColor="@color/chengse"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/order_flight_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/chengse"
+            android:onClick="orderFlightOnclick"
+            android:text="预订"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+     <TextView
+         android:id="@+id/person_item_name"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="趙東陽"
+         android:layout_marginLeft="@dimen/font_size_20"
+         android:layout_marginTop="@dimen/font_size_10"
+         android:textColor="@color/black"
+         android:textSize="@dimen/font_size_18"
+         />
+    <TextView
+        android:id="@+id/person_item_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="身份证 638339393933030303"
+        android:layout_marginLeft="@dimen/font_size_20"
+        android:layout_marginTop="@dimen/font_size_10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_18"
+        android:layout_marginBottom="@dimen/font_size_20"
+        />
+
+
+
+</LinearLayout>

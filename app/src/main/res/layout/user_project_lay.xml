@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@mipmap/all_background"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="联系人信息"
+                android:textSize="@dimen/font_size_16"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/font_size_16"
+                />
+        </RelativeLayout>
+
+
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="联系人"
+            android:layout_marginLeft="@dimen/font_size_16"
+            android:id="@+id/textView13" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:text="赵先生"
+            android:ems="10"
+            android:textSize="@dimen/font_size_16"
+            android:background="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView13"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_marginLeft="@dimen/font_size_16"
+            android:layout_marginStart="@dimen/font_size_16"
+            android:id="@+id/user_contact_name" />
+
+    </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            android:layout_marginLeft="@dimen/font_size_16"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="手机号"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:id="@+id/textView14" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="phone"
+                android:text="15201865331"
+                android:ems="10"
+                android:background="@color/white"
+                android:textSize="@dimen/font_size_14"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView14"
+                android:layout_toEndOf="@+id/textView14"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:layout_marginStart="@dimen/font_size_16"
+                android:id="@+id/user_ponenumber_name" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            android:layout_marginLeft="@dimen/font_size_16"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="邮箱号"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:id="@+id/textView15" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:text="1369587@qq.com"
+                android:ems="10"
+                android:background="@color/white"
+                android:textSize="@dimen/font_size_14"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView15"
+                android:layout_toEndOf="@+id/textView15"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:layout_marginStart="@dimen/font_size_16"
+                android:id="@+id/user_emil_address" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/light_gray"
+            />
+    </LinearLayout>
+    <!--成本中心-->
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:background="@mipmap/all_background"
+             >
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="成本中心"
+                 android:textSize="@dimen/font_size_16"
+                 android:textColor="@color/colorPrimary"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="@dimen/font_size_16"
+                 />
+         </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/chengben_rety"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="成本中心"
+                android:layout_marginLeft="@dimen/font_size_16"
+                android:id="@+id/t5" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="110001115566"
+                android:textSize="@dimen/font_size_14"
+                android:gravity="center"
+                android:textColor="@color/gray_color"
+                android:id="@+id/user_chenben_name" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/arrow_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/font_size_16"
+                android:id="@+id/img_for_chengben" />
+        </RelativeLayout>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/line_height"
+             android:background="@color/light_gray"
+             />
+         <RelativeLayout
+             android:id="@+id/pj_rety"
+             android:layout_width="match_parent"
+             android:layout_height="45dp"
+             android:background="@color/white"
+             >
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:text="项目名称/编号"
+                 android:layout_marginLeft="@dimen/font_size_16"
+                 android:id="@+id/t6" />
+             <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:inputType="textPersonName"
+                 android:text=""
+                 android:background="@color/transparent"
+                 android:textSize="@dimen/font_size_14"
+                 android:gravity="center"
+                 android:id="@+id/user_pjname_name" />
+
+
+         </RelativeLayout>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/line_height"
+             android:background="@color/light_gray"
+             />
+     </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/light_gray"
+        />
+    <!--出发日期-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height_45">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+
+            >
+
+            <TextView
+                android:text="返程日期："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="35dp"
+                android:textSize="@dimen/font_size_16"
+                android:textColor="@color/black"
+                android:id="@+id/backdata_txt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_16"
+                android:text="2016-11-12"
+                android:gravity="center"
+                android:layout_marginRight="25dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/search_background"
+                android:id="@+id/backdata_edit_btn"
+                android:layout_toRightOf="@+id/backdata_txt"
+                android:layout_toEndOf="@+id/backdata_txt" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <!--出发时间-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height_45">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+
+            >
+
+            <TextView
+                android:text="返程时间："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="35dp"
+                android:textSize="@dimen/font_size_16"
+
+                android:textColor="@color/black"
+                android:id="@+id/back_time_txt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_16"
+                android:text="下午 16：00"
+                android:gravity="center"
+                android:layout_marginRight="25dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/search_background"
+                android:id="@+id/backtime_edit_btn"
+                android:layout_toRightOf="@+id/back_time_txt"
+                android:layout_toEndOf="@+id/back_time_txt" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

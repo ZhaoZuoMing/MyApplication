@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <include layout="@layout/app_title_bar"/>
+
+        <RadioGroup
+            android:id="@+id/group01"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/font_size_16"
+            android:layout_marginLeft="@dimen/font_size_16"
+            android:layout_marginRight="@dimen/font_size_16"
+            >
+            <RadioButton
+                android:text="@string/oneway_txt"
+                android:textColor="@drawable/flight_checkbtn_textcolor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_item_instans"
+                android:id="@+id/oneway_radiobtn"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="true"
+                android:textSize="@dimen/font_size_14"
+                android:background="@drawable/flight_radiobutton_select_bg"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/backway_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/user_item_instans"
+                android:id="@+id/backway_radio"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@drawable/flight_checkbtn_textcolor"
+                android:background="@drawable/flight_radiobutton_select_bg"
+                android:layout_weight="1" />
+        </RadioGroup>
+     <!--机场选择-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginRight="@dimen/font_size_16"
+        android:layout_marginLeft="@dimen/font_size_16"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_instans">
+
+            <TextView
+                android:id="@+id/flight_start_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="上海虹桥"
+                android:textColor="@color/gray_color"
+                android:textSize="18sp"
+                android:layout_marginLeft="@dimen/font_size_10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/flight_to_airport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="北京首都"
+                android:textColor="@color/gray_color"
+                android:layout_marginRight="@dimen/font_size_10"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/change_from_to"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@mipmap/from_change_to" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/listview_driver"
+            />
+        <!--出发和到达日期-->
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/user_item_instans">
+
+             <TextView
+                 android:id="@+id/flight_start_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="@dimen/font_size_10"
+                 android:layout_marginStart="@dimen/font_size_10"
+                 android:text="11月20日"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+           <TextView
+               android:layout_width="@dimen/line_height"
+               android:layout_height="match_parent"
+               android:background="@color/listview_driver"
+               android:layout_centerVertical="true"
+               android:layout_centerHorizontal="true"
+               />
+
+             <TextView
+                 android:id="@+id/flight_start_week"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                 android:layout_toEndOf="@+id/flight_start_date"
+                 android:layout_toRightOf="@+id/flight_start_date"
+                 android:layout_marginLeft="@dimen/font_size_5"
+                 android:text="周三" />
+
+             <TextView
+                 android:id="@+id/flight_back_week"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="@dimen/font_size_10"
+                 android:visibility="gone"
+                 android:text="周四" />
+
+             <TextView
+                 android:id="@+id/flight_back_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginEnd="@dimen/font_size_5"
+                 android:layout_marginRight="@dimen/font_size_5"
+                 android:layout_toLeftOf="@+id/flight_back_week"
+                 android:layout_toStartOf="@+id/flight_back_week"
+                 android:text="11月21日"
+                 android:visibility="gone"
+                 android:textSize="16sp"
+                 android:textStyle="bold" />
+
+
+         </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/listview_driver"
+            />
+
+        <Button
+            android:id="@+id/goto_search_flight"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_instans"
+            android:background="@drawable/button_select_style"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16"
+            android:layout_marginTop="@dimen/font_size_16"
+            android:text="查询" />
+    </LinearLayout>
+
+</LinearLayout>

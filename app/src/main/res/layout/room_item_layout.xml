@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+         android:orientation="vertical"
+      >
+      <RelativeLayout
+          android:id="@+id/room_item_rety"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:background="@drawable/train_shape_right"
+          android:layout_marginRight="5dp"
+          android:layout_marginLeft="5dp"
+          >
+          <ImageView
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:layout_centerVertical="true"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"
+              android:layout_marginLeft="5dp"
+              android:layout_marginStart="5dp"
+              android:background="@color/light_gray"
+              android:id="@+id/room_img"/>
+
+          <TextView
+              android:text="商务豪华床"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@+id/room_img"
+              android:layout_toRightOf="@+id/room_img"
+              android:layout_toEndOf="@+id/room_img"
+              android:layout_marginLeft="10dp"
+              android:layout_marginStart="10dp"
+              android:textColor="@color/black"
+              android:layout_marginTop="5dp"
+              android:id="@+id/room_name"/>
+
+          <TextView
+              android:text="无窗、双床、25-30平米、免费WIFI、可入住2人"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/room_img"
+              android:layout_alignLeft="@+id/room_name"
+              android:layout_alignStart="@+id/room_name"
+              android:maxLines="2"
+              android:layout_marginBottom="5dp"
+              android:id="@+id/room_content"
+              android:layout_toLeftOf="@+id/room_ischeck_btn"
+              android:layout_toStartOf="@+id/room_ischeck_btn"/>
+
+          <ImageView
+              android:text=""
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:background="@drawable/room_radio_check"
+              android:layout_centerVertical="true"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentEnd="true"
+              android:layout_marginRight="@dimen/font_size_16"
+              android:id="@+id/room_ischeck_btn"/>
+      </RelativeLayout>
+
+
+
+
+</LinearLayout>

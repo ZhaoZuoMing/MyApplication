@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/app_title_bar"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        >
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/my_sc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/font_size_20"
+            android:background="@mipmap/all_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/H_order_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/font_size_16"
+                        android:layout_marginTop="@dimen/font_size_20"
+                        android:text="确认中..."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_20" />
+
+                    <TextView
+                        android:id="@+id/H_order_status_dt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/font_size_20"
+                        android:layout_marginLeft="@dimen/font_size_18"
+                        android:layout_marginTop="@dimen/font_size_10"
+                        android:text="订单已提交，请稍后刷新订单状态"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/font_size_18" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white">
+
+
+                    <TextView
+                        android:id="@+id/H_order_payType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:text="到店付"
+                        android:textColor="@color/gray_color"
+                        android:textSize="@dimen/font_size_18" />
+
+                    <TextView
+                        android:id="@+id/H_order_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="￥180"
+                        android:layout_toRightOf="@+id/H_order_payType"
+                        android:layout_marginLeft="@dimen/font_size_20"
+                        android:textColor="@color/chengse"
+                        android:textSize="@dimen/font_size_18"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/train_shape_right"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/font_size_10"
+                    android:layout_marginLeft="@dimen/font_size_10"
+                    android:layout_marginRight="@dimen/font_size_10"
+                    >
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="@dimen/title_bar_height_45">
+
+
+                       <TextView
+                           android:id="@+id/H_order_hotelname"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentLeft="true"
+                           android:layout_alignParentStart="true"
+                           android:layout_centerVertical="true"
+                           android:layout_marginLeft="15dp"
+                           android:layout_marginStart="15dp"
+                           android:textSize="@dimen/font_size_18"
+                           android:maxLines="1"
+                           android:ellipsize="end"
+                           android:text="上海中福大酒店" />
+                   </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/line_height_03"
+                        android:background="@color/light_gray"
+                        android:layout_marginLeft="@dimen/font_size_10"
+                        android:layout_marginRight="@dimen/font_size_10"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/H_order_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/font_size_10"
+                            android:text="上海市宝山区江阳拦路1807(中山北路附近)"
+                            android:textSize="@dimen/font_size_16"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:id="@+id/H_order_call_hotel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="联系酒店"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="@dimen/font_size_18"
+                                android:textColor="@color/colorPrimary"
+                                />
+                             <TextView
+                                 android:layout_width="@dimen/line_height"
+                                 android:layout_height="match_parent"
+                                 android:layout_marginTop="@dimen/font_size_5"
+                                 android:layout_marginBottom="@dimen/font_size_5"
+                                 android:layout_marginLeft="@dimen/font_size_10"
+                                 android:layout_marginRight="@dimen/font_size_10"
+                                 android:background="@color/gray_color"
+                                 />
+                            <TextView
+                                android:id="@+id/H_order_location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="地图导航"
+                                android:layout_gravity="center_vertical"
+                                android:textSize="@dimen/font_size_18"
+                                android:textColor="@color/colorPrimary"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/line_height_03"
+                            android:background="@color/light_gray"
+                            android:layout_marginLeft="@dimen/font_size_10"
+                            android:layout_marginRight="@dimen/font_size_10"
+                            />
+
+                    </LinearLayout>
+
+                    <!--房型及wifi-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/H_order_roomType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray_color"
+                            android:textSize="@dimen/font_size_18"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="@dimen/font_size_10"
+                            android:text="豪华大床房"
+                            />
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="40dp"
+                             android:orientation="horizontal"
+                             android:layout_marginLeft="15dp"
+                             >
+                             <TextView
+                                 android:id="@+id/H_order_enter_time"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="center_vertical"
+                                 android:text="5月28 - 5月30"
+                                 android:textSize="@dimen/font_size_18"
+                                 android:textColor="@color/gray_color"
+                                 />
+                                 <TextView
+                                     android:id="@+id/H_order_night_num_time"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_gravity="center_vertical"
+                                     android:layout_marginLeft="@dimen/font_size_5"
+                                     android:text="1晚\t1间\t最晚到店15::30"
+                                     />
+
+                         </LinearLayout>
+                         <TextView
+                             android:id="@+id/H_order_breakfast_wf"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:textSize="@dimen/font_size_16"
+                             android:text="单早\t|\t免费Wifi"
+                             android:layout_marginLeft="15dp"
+                             android:layout_marginBottom="@dimen/font_size_10"
+                             />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--入住人信心-->
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/train_shape_right"
+                       android:layout_margin="@dimen/font_size_10"
+                       android:orientation="vertical"
+                       >
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="40dp"
+                           android:alpha="0.6"
+                           android:layout_margin="-3dp"
+                           android:background="@drawable/h_order_shape"
+                           >
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentLeft="true"
+                               android:layout_alignParentStart="true"
+                               android:layout_centerVertical="true"
+                               android:layout_marginLeft="15dp"
+                               android:layout_marginStart="15dp"
+                               android:textColor="@color/black"
+                               android:textSize="@dimen/font_size_16"
+                               android:text="入住人信息" />
+                       </RelativeLayout>
+                       <!--入住人信息-->
+                       <com.myviews.MyListView
+                           android:id="@+id/H_order_hotel_persons"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@color/white"
+                           android:divider="@color/light_gray"
+                           android:dividerHeight="@dimen/line_height"
+                           android:layout_marginBottom="@dimen/font_size_5"
+                           />
+                   </LinearLayout>
+<!--联系人信息-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/train_shape_right"
+                android:layout_margin="@dimen/font_size_10"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:alpha="0.6"
+                    android:layout_margin="-3dp"
+                    android:background="@drawable/h_order_shape"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_16"
+                        android:text="联系人信息" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="联系人"
+                        android:layout_marginLeft="@dimen/font_size_16"
+                        android:id="@+id/textView13" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text="赵先生"
+                        android:textColor="@color/gray_color"
+                        android:textSize="@dimen/font_size_16"
+                        android:layout_centerVertical="true"
+                         android:layout_toRightOf="@+id/textView13"
+                        android:layout_toEndOf="@+id/textView13"
+                        android:layout_marginLeft="@dimen/font_size_16"
+                        android:layout_marginStart="@dimen/font_size_16"
+                        android:id="@+id/H_order_contact_name" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_03"
+                    android:background="@color/light_gray"
+                    android:layout_marginRight="@dimen/font_size_10"
+                    android:layout_marginLeft="@dimen/font_size_10"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="手机号"
+                        android:layout_marginLeft="@dimen/font_size_16"
+                        android:id="@+id/textView14" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="15201865331"
+                        android:textColor="@color/gray_color"
+                        android:background="@color/white"
+                        android:textSize="@dimen/font_size_14"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/textView14"
+                        android:layout_toEndOf="@+id/textView14"
+                        android:layout_marginLeft="@dimen/font_size_16"
+                        android:layout_marginStart="@dimen/font_size_16"
+                        android:id="@+id/H_order_phone_number" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_03"
+                    android:background="@color/light_gray"
+                    android:layout_marginRight="@dimen/font_size_10"
+                    android:layout_marginLeft="@dimen/font_size_10"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="邮箱号"
+                        android:layout_marginLeft="@dimen/font_size_16"
+                        android:id="@+id/textView15" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1369587@qq.com"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/gray_color"
+                        android:textSize="@dimen/font_size_14"
+                        android:layout_toRightOf="@+id/textView15"
+                        android:layout_toEndOf="@+id/textView15"
+                        android:layout_marginLeft="@dimen/font_size_16"
+                        android:layout_marginStart="@dimen/font_size_16"
+                        android:id="@+id/H_order_emil_address" />
+
+                </RelativeLayout>
+                </LinearLayout>
+                <!--成本中心及项目编号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/train_shape_right"
+                android:layout_margin="@dimen/font_size_10"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:alpha="0.6"
+                    android:layout_margin="-3dp"
+                    android:background="@drawable/h_order_shape"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_size_16"
+                        android:text="联系人信息" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/chengben_rety"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="成本中心"
+                        android:layout_marginLeft="@dimen/font_size_16"
+                        android:id="@+id/t5" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="110001115566"
+                        android:textSize="@dimen/font_size_14"
+                        android:gravity="center"
+                        android:textColor="@color/gray_color"
+                        android:id="@+id/H_order_userCenter_name" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height_03"
+                    android:background="@color/light_gray"
+                    android:layout_marginRight="@dimen/font_size_10"
+                    android:layout_marginLeft="@dimen/font_size_10"
+                    />
+                <RelativeLayout
+                    android:id="@+id/pj_rety"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/white"
+                    android:layout_marginBottom="@dimen/font_size_5"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="项目名称/编号"
+                        android:layout_marginLeft="@dimen/font_size_16"
+                        android:id="@+id/t6" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:background="@color/transparent"
+                        android:textSize="@dimen/font_size_14"
+                        android:gravity="center"
+                        android:id="@+id/H_order_project_number" />
+                </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginRight="@dimen/font_size_10"
+        android:layout_marginLeft="@dimen/font_size_10"
+        android:layout_marginTop="3dp"
+        >
+
+        <TextView
+            android:text="东方航空"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/gray_color"
+            android:id="@+id/pop_item_txt" />
+    </RelativeLayout>
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="0.5px"
+             android:background="@color/gray_color"
+             />
+
+</LinearLayout>

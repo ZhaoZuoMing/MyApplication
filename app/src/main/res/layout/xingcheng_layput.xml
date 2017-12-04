@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/all_background"
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/title_bar_height_45"
+       android:background="@color/colorPrimary"
+       >
+
+       <TextView
+           android:text="@string/mytraval_txt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true"
+           android:textColor="@color/white"
+           android:textSize="@dimen/font_size_16"
+           android:id="@+id/mytraval_txt" />
+   </RelativeLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/line_height_03"
+         android:background="@color/white"
+         />
+    <LinearLayout
+        android:id="@+id/check_list_lay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+
+        >
+
+           <Button
+               android:id="@+id/check_flight_btn"
+                style="@style/order_list_style"
+                android:text="机票"
+               android:textColor="@color/white"
+                android:background="@drawable/gv_shape_selsected"
+               />
+
+           <Button
+               android:id="@+id/check_train_btn"
+               style="@style/order_list_style"
+               android:background="@drawable/gv_shape_noselect"
+               android:text="火车票" />
+
+           <Button
+               android:id="@+id/check_hotel_btn"
+               style="@style/order_list_style"
+               android:background="@drawable/gv_shape_noselect"
+               android:text="酒店" />
+
+    </LinearLayout>
+       <ListView
+           android:id="@+id/order_list_listview"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:divider="@color/transparent"
+           android:dividerHeight="@dimen/line_height"
+           />
+
+
+</LinearLayout>

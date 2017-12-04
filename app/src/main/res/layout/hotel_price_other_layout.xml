@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:layout_gravity="bottom"
+    android:background="@color/popbg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rectangle_white"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+
+
+        <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/font_size_20"
+           android:text="价格"
+           android:textSize="@dimen/font_size_18"
+           android:layout_marginLeft="@dimen/font_size_16"
+            android:layout_marginBottom="@dimen/font_size_10"
+
+           />
+
+        <LinearLayout
+            android:id="@+id/group01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/font_size_10"
+            android:layout_marginRight="@dimen/font_size_10"
+            >
+            <RadioButton
+                android:id="@+id/radio_buxian"
+                style="@style/hotel_popo_radio"
+                android:checked="true"
+                android:text="不限"
+
+                />
+
+            <RadioButton
+                android:id="@+id/radio_150_end"
+                style="@style/hotel_popo_radio"
+                android:text="￥150以下"
+                android:layout_marginLeft="3dp"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_300_end"
+                style="@style/hotel_popo_radio"
+                android:text="￥150-300"
+                android:layout_marginLeft="3dp"
+
+                />
+            <RadioButton
+                android:id="@+id/radio_450_end"
+                style="@style/hotel_popo_radio"
+                android:text="￥301-500"
+                android:layout_marginLeft="3dp"
+
+                />
+            </LinearLayout>
+          <LinearLayout
+              android:id="@+id/group02"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginLeft="@dimen/font_size_10"
+              android:layout_marginRight="@dimen/font_size_10"
+              android:layout_marginTop="@dimen/font_size_10"
+              >
+              <RadioButton
+                  android:id="@+id/radio_600_end"
+                  style="@style/hotel_popo_radio"
+                  android:text="￥501-800"
+
+                  />
+              <RadioButton
+                  android:id="@+id/radio_1000_end"
+                  style="@style/hotel_popo_radio"
+                  android:text="￥801-1000"
+                  android:layout_marginLeft="3dp"
+
+                  />
+              <RadioButton
+                  android:id="@+id/radio_10001_end"
+                  style="@style/hotel_popo_radio"
+                  android:text="￥1000以上"
+                  android:layout_marginLeft="3dp"
+
+                  />
+              <RadioButton
+                  android:id="@+id/radio_3002_end"
+                  style="@style/hotel_popo_radio"
+                  android:background="@drawable/transparent"
+                  android:clickable="false"
+                  />
+
+          </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/font_size_10"
+            android:text="星级"
+            android:textSize="@dimen/font_size_18"
+            android:layout_marginLeft="@dimen/font_size_16"
+            android:layout_marginBottom="@dimen/font_size_10"
+
+            />
+          <LinearLayout
+              android:id="@+id/hotel_level_checkgv"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginRight="@dimen/font_size_10"
+              android:layout_marginLeft="@dimen/font_size_10"
+              >
+              <CheckBox
+                 android:id="@+id/box_buxian"
+                  style="@style/hotel_popo_radio"
+                  android:checked="true"
+                  android:text="不限"
+
+                  />
+              <CheckBox
+                  android:id="@+id/box_kuaijie_hotel"
+                  style="@style/hotel_popo_radio"
+                  android:text="公寓/其他"
+                  android:layout_marginLeft="3dp"
+
+                  />
+              <CheckBox
+                  android:id="@+id/box_jinji_hotel"
+                  style="@style/hotel_popo_radio"
+                  android:text="经济/客栈"
+                  android:layout_marginLeft="3dp"
+
+                  />
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/hotel_level_checkgv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/font_size_10"
+
+            android:layout_marginTop="@dimen/font_size_10"
+            android:layout_marginLeft="@dimen/font_size_10">
+          <CheckBox
+            android:id="@+id/box_sanxin_hotel"
+            style="@style/hotel_popo_radio"
+            android:text="三星/舒适"
+             />
+            <CheckBox
+                android:id="@+id/box_sixing_hotel"
+                style="@style/hotel_popo_radio"
+                android:text="四星/高档"
+                android:layout_marginLeft="3dp"
+
+                />
+            <CheckBox
+                android:id="@+id/box_wuxing_hotel"
+                style="@style/hotel_popo_radio"
+                android:text="五星/豪华"
+                android:layout_marginLeft="3dp"
+
+                />
+        </LinearLayout>
+
+           <Button
+               android:id="@+id/hotel_pop_btn"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/title_bar_height_45"
+               android:layout_margin="@dimen/font_size_20"
+               android:background="@drawable/bt_bgd"
+               android:text="确 定"
+               android:textSize="@dimen/font_size_18"
+               android:textColor="@color/white"
+
+               />
+
+    </LinearLayout>
+
+</LinearLayout>

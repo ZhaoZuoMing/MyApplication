@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom"
+    android:layout_marginTop="@dimen/font_size_5"
+
+    android:background="@color/popbg"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/font_size_5"
+        android:background="@color/light_gray"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_height_45"
+            android:background="@color/gray_color"
+            >
+            <TextView
+                android:text="   取消  "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/room_popo_dismiss"/>
+
+            <TextView
+                android:text="豪华套房"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:id="@+id/room_price_name"/>
+        </RelativeLayout>
+       <ListView
+           android:id="@+id/roo_price_listview"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:dividerHeight="@dimen/line_height"
+           android:divider="@color/transparent"
+           android:layout_marginTop="@dimen/font_size_5"
+
+           />
+
+    </LinearLayout>
+
+</LinearLayout>

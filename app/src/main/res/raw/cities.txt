@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <InitalDataResponse xmlns="http://tempuri.org/">
+            <Cities>
+                <anyType xsi:type="H_City">
+                    <ID>1</ID>
+                    <Code>PEK</Code>
+                    <IsHot>1</IsHot>
+                    <Name>北京</Name>
+                    <EName>Beijing</EName>
+                    <Country>1</Country>
+                    <Province>1</Province>
+                    <Airport>NAY,PEK</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>2</ID>
+                    <Code>SHA</Code>
+                    <IsHot>1</IsHot>
+                    <Name>上海</Name>
+                    <EName>Shanghai</EName>
+                    <Country>1</Country>
+                    <Province>2</Province>
+                    <Airport>PVG,SHA</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>3</ID>
+                    <Code>TSN</Code>
+                    <IsHot>1</IsHot>
+                    <Name>天津</Name>
+                    <EName>Tianjin</EName>
+                    <Country>1</Country>
+                    <Province>3</Province>
+                    <Airport>TSN</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>4</ID>
+                    <Code>CKG</Code>
+                    <IsHot>1</IsHot>
+                    <Name>重庆</Name>
+                    <EName>Chongqing</EName>
+                    <Country>1</Country>
+                    <Province>4</Province>
+                    <Airport>CKG</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>5</ID>
+                    <Code>HRB</Code>
+                    <IsHot>1</IsHot>
+                    <Name>哈尔滨</Name>
+                    <EName>Harbin</EName>
+                    <Country>1</Country>
+                    <Province>5</Province>
+                    <Airport>HRB</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>6</ID>
+                    <Code>DLC</Code>
+                    <IsHot>1</IsHot>
+                    <Name>大连</Name>
+                    <EName>Dalian</EName>
+                    <Country>1</Country>
+                    <Province>7</Province>
+                    <Airport>DLC</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>7</ID>
+                    <Code>TAO</Code>
+                    <IsHot>1</IsHot>
+                    <Name>青岛</Name>
+                    <EName>Qingdao</EName>
+                    <Country>1</Country>
+                    <Province>10</Province>
+                    <Airport>TAO</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>10</ID>
+                    <Code>SIA</Code>
+                    <IsHot>1</IsHot>
+                    <Name>西安</Name>
+                    <EName>Xi'an</EName>
+                    <Country>1</Country>
+                    <Province>12</Province>
+                    <Airport>XIY</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>12</ID>
+                    <Code>NKG</Code>
+                    <IsHot>1</IsHot>
+                    <Name>南京</Name>
+                    <EName>Nanjing</EName>
+                    <Country>1</Country>
+                    <Province>15</Province>
+                    <Airport>NKG</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>428</ID>
+                    <Code>SJW</Code>
+                    <IsHot>0</IsHot>
+                    <Name>石家庄</Name>
+                    <EName>Shijiazhuang</EName>
+                    <Country>1</Country>
+                    <Province>8</Province>
+                    <Airport>SJW</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>28</ID>
+                    <Code>CTU</Code>
+                    <IsHot>1</IsHot>
+                    <Name>成都</Name>
+                    <EName>Chengdu</EName>
+                    <Country>1</Country>
+                    <Province>22</Province>
+                    <Airport>CTU</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>30</ID>
+                    <Code>SZX</Code>
+                    <IsHot>1</IsHot>
+                    <Name>深圳</Name>
+                    <EName>Shenzhen</EName>
+                    <Country>1</Country>
+                    <Province>23</Province>
+                    <Airport>SZX</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>31</ID>
+                    <Code>ZUH</Code>
+                    <IsHot>1</IsHot>
+                    <Name>珠海</Name>
+                    <EName>Zhuhai</EName>
+                    <Country>1</Country>
+                    <Province>23</Province>
+                    <Airport>ZUH</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>32</ID>
+                    <Code>CAN</Code>
+                    <IsHot>1</IsHot>
+                    <Name>广州</Name>
+                    <EName>Guangzhou</EName>
+                    <Country>1</Country>
+                    <Province>23</Province>
+                    <Airport>CAN</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>33</ID>
+                    <Code>KWL</Code>
+                    <IsHot>0</IsHot>
+                    <Name>桂林</Name>
+                    <EName>Guilin</EName>
+                    <Country>1</Country>
+                    <Province>24</Province>
+                    <Airport>KWL</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>34</ID>
+                    <Code>KMG</Code>
+                    <IsHot>1</IsHot>
+                    <Name>昆明</Name>
+                    <EName>Kunming</EName>
+                    <Country>1</Country>
+                    <Province>25</Province>
+                    <Airport>KMG</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>105</ID>
+                    <Code>TYN</Code>
+                    <IsHot>0</IsHot>
+                    <Name>太原</Name>
+                    <EName>Taiyuan</EName>
+                    <Country>1</Country>
+                    <Province>11</Province>
+                    <Airport>TYN</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>43</ID>
+                    <Code>SYX</Code>
+                    <IsHot>0</IsHot>
+                    <Name>三亚</Name>
+                    <EName>Sanya</EName>
+                    <Country>1</Country>
+                    <Province>31</Province>
+                    <Airport>SYX</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>39</ID>
+                    <Code>URC</Code>
+                    <IsHot>0</IsHot>
+                    <Name>乌鲁木齐</Name>
+                    <EName>Urumqi</EName>
+                    <Country>1</Country>
+                    <Province>29</Province>
+                    <Airport>URC</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>58</ID>
+                    <Code>HKG</Code>
+                    <IsHot>0</IsHot>
+                    <Name>香港</Name>
+                    <EName>Hong Kong</EName>
+                    <Country>1</Country>
+                    <Province>32</Province>
+                    <Airport>HKG</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>59</ID>
+                    <Code>MFM</Code>
+                    <IsHot>0</IsHot>
+                    <Name>澳门</Name>
+                    <EName>Macau</EName>
+                    <Country>1</Country>
+                    <Province>33</Province>
+                    <Airport>MFM</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>99</ID>
+                    <Code>INC</Code>
+                    <IsHot>0</IsHot>
+                    <Name>银川</Name>
+                    <EName>Yinchuan</EName>
+                    <Country>1</Country>
+                    <Province>14</Province>
+                    <Airport>INC</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>100</ID>
+                    <Code>LHW</Code>
+                    <IsHot>0</IsHot>
+                    <Name>兰州</Name>
+                    <EName>Lanzhou</EName>
+                    <Country>1</Country>
+                    <Province>13</Province>
+                    <Airport>LHW</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>103</ID>
+                    <Code>HET</Code>
+                    <IsHot>0</IsHot>
+                    <Name>呼和浩特</Name>
+                    <EName>Hohhot</EName>
+                    <Country>1</Country>
+                    <Province>28</Province>
+                    <Airport>HET</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>14</ID>
+                    <Code>SZV</Code>
+                    <IsHot>0</IsHot>
+                    <Name>苏州</Name>
+                    <EName>Suzhou</EName>
+                    <Country>1</Country>
+                    <Province>15</Province>
+                    <Airport />
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>15</ID>
+                    <Code>YZO</Code>
+                    <IsHot>0</IsHot>
+                    <Name>扬州</Name>
+                    <EName>Yangzhou</EName>
+                    <Country>1</Country>
+                    <Province>15</Province>
+                    <Airport />
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>16</ID>
+                    <Code>ZJA</Code>
+                    <IsHot>0</IsHot>
+                    <Name>镇江</Name>
+                    <EName>Zhenjiang</EName>
+                    <Country>1</Country>
+                    <Province>15</Province>
+                    <Airport />
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>17</ID>
+                    <Code>HGH</Code>
+                    <IsHot>1</IsHot>
+                    <Name>杭州</Name>
+                    <EName>Hangzhou</EName>
+                    <Country>1</Country>
+                    <Province>16</Province>
+                    <Airport>HGH</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>144</ID>
+                    <Code>TNA</Code>
+                    <IsHot>0</IsHot>
+                    <Name>济南</Name>
+                    <EName>Jinan</EName>
+                    <Country>1</Country>
+                    <Province>10</Province>
+                    <Airport>TNA</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>185</ID>
+                    <Code>BAD</Code>
+                    <IsHot>0</IsHot>
+                    <Name>保定</Name>
+                    <EName>Baoding</EName>
+                    <Country>1</Country>
+                    <Province>8</Province>
+                    <Airport />
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>278</ID>
+                    <Code>HFE</Code>
+                    <IsHot>0</IsHot>
+                    <Name>合肥</Name>
+                    <EName>Hefei</EName>
+                    <Country>1</Country>
+                    <Province>17</Province>
+                    <Airport>HFE</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>559</ID>
+                    <Code>CGO</Code>
+                    <IsHot>0</IsHot>
+                    <Name>郑州</Name>
+                    <EName>Zhengzhou</EName>
+                    <Country>1</Country>
+                    <Province>9</Province>
+                    <Airport>CGO</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>25</ID>
+                    <Code>XMN</Code>
+                    <IsHot>0</IsHot>
+                    <Name>厦门</Name>
+                    <EName>Xiamen</EName>
+                    <Country>1</Country>
+                    <Province>19</Province>
+                    <Airport>XMN</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>38</ID>
+                    <Code>KWE</Code>
+                    <IsHot>0</IsHot>
+                    <Name>贵阳</Name>
+                    <EName>Guiyang</EName>
+                    <Country>1</Country>
+                    <Province>26</Province>
+                    <Airport>KWE</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>124</ID>
+                    <Code>XNN</Code>
+                    <IsHot>0</IsHot>
+                    <Name>西宁</Name>
+                    <EName>Xining</EName>
+                    <Country>1</Country>
+                    <Province>27</Province>
+                    <Airport>XNN</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>140</ID>
+                    <Code>YUC</Code>
+                    <IsHot>0</IsHot>
+                    <Name>运城</Name>
+                    <EName>Yuncheng</EName>
+                    <Country>1</Country>
+                    <Province>11</Province>
+                    <Airport>YCU</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>41</ID>
+                    <Code>LXA</Code>
+                    <IsHot>0</IsHot>
+                    <Name>拉萨</Name>
+                    <EName>Lhasa</EName>
+                    <Country>1</Country>
+                    <Province>30</Province>
+                    <Airport>LXA</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>477</ID>
+                    <Code>WUH</Code>
+                    <IsHot>1</IsHot>
+                    <Name>武汉</Name>
+                    <EName>Wuhan</EName>
+                    <Country>1</Country>
+                    <Province>20</Province>
+                    <Airport>WUH</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>158</ID>
+                    <Code>CGQ</Code>
+                    <IsHot>0</IsHot>
+                    <Name>长春</Name>
+                    <EName>Changchun</EName>
+                    <Country>1</Country>
+                    <Province>6</Province>
+                    <Airport>CGQ</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+                <anyType xsi:type="H_City">
+                    <ID>206</ID>
+                    <Code>CSX</Code>
+                    <IsHot>0</IsHot>
+                    <Name>长沙</Name>
+                    <EName>Changsha</EName>
+                    <Country>1</Country>
+                    <Province>21</Province>
+                    <Airport>CSX</Airport>
+                    <Status>1</Status>
+                    <SortIndex>99</SortIndex>
+                </anyType>
+            </Cities>
+        </InitalDataResponse>
+    </soap:Body>
+</soap:Envelope>

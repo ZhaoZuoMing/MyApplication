@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/all_background"
+    >
+
+     <include layout="@layout/app_title_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@mipmap/search_air_bg"
+
+         >
+
+
+    </RelativeLayout>
+      <!--所有内容区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        >
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginLeft="@dimen/font_size_10"
+              android:layout_marginRight="@dimen/font_size_10"
+              android:layout_marginTop="@dimen/font_size_10"
+
+              >
+
+            <RadioGroup
+                android:id="@+id/oneback_radiogroup_check"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height_45"
+                android:orientation="horizontal"
+                >
+            <RadioButton
+                android:text="@string/oneway_txt"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height_45"
+                android:id="@+id/oneway_radiobtn"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="true"
+                android:textSize="16dp"
+                android:background="@drawable/select_oneback_check"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/backway_txt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height_45"
+                android:id="@+id/backway_radio"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:background="@drawable/select_oneback_check"
+                android:layout_weight="1" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn"
+            android:orientation="vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height_45"
+                android:layout_marginTop="@dimen/font_size_16"
+                android:layout_marginRight="@dimen/shape_1dp"
+                android:layout_marginLeft="@dimen/shape_1dp"
+                >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src ="@mipmap/feiji_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/feiji_bg" />
+               <!--               始发地                 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/bg_start"
+                    android:layout_toLeftOf="@+id/feiji_bg"
+                    android:layout_toStartOf="@+id/feiji_bg">
+
+                    <TextView
+                        android:text="上海虹桥"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/font_size_16"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/start_city_txt" />
+                </RelativeLayout>
+                <!--终点-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/feiji_bg"
+                    android:layout_marginRight="3dp"
+                    android:background="@mipmap/bg_start"
+
+                    android:layout_toEndOf="@+id/feiji_bg">
+
+                    <TextView
+                        android:text="北京首都"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/font_size_16"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:id="@+id/end_city_txt" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <!--出发日期-->
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/title_bar_height_45">
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/title_bar_height_45"
+                     android:layout_weight="1"
+                     android:background="@color/white"
+                     android:layout_marginRight="3dp"
+                     android:layout_marginLeft="3dp"
+
+                     >
+
+                     <TextView
+                         android:text="出发日期："
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_alignParentLeft="true"
+                         android:layout_alignParentStart="true"
+                         android:layout_marginLeft="30dp"
+                         android:layout_marginStart="35dp"
+                         android:textSize="@dimen/font_size_16"
+                         android:textColor="@color/black"
+                         android:id="@+id/startdata_txt" />
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="40dp"
+                         android:textSize="@dimen/font_size_16"
+                         android:textColor="@color/black"
+                         android:gravity="center"
+                         android:layout_marginRight="25dp"
+                         android:layout_centerVertical="true"
+                         android:background="@mipmap/search_background"
+                         android:id="@+id/startdata_edit_btn"
+                         android:layout_toRightOf="@+id/startdata_txt"
+                         android:layout_toEndOf="@+id/startdata_txt" />
+                 </RelativeLayout>
+
+
+             </LinearLayout>
+
+
+            <!--出发时间-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height_45">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_bar_height_45"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+
+                    >
+
+                    <TextView
+                        android:text="起飞时间："
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginStart="35dp"
+                        android:textSize="@dimen/font_size_16"
+                        android:textColor="@color/black"
+                        android:id="@+id/startdata_time_txt" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="25dp"
+                        android:textSize="@dimen/font_size_16"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/search_background"
+                        android:id="@+id/starttime_edit_btn"
+                        android:layout_toRightOf="@+id/startdata_time_txt"
+                        android:layout_toEndOf="@+id/startdata_time_txt" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <!--                  返程布局                      -->
+            <LinearLayout
+                android:id="@+id/backdata_layout_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+                <include layout="@layout/back_layout"/>
+            </LinearLayout>
+
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/title_bar_height_45"
+                 android:orientation="horizontal"
+                 >
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:background="@mipmap/bg_start"
+                     android:layout_marginLeft="3dp"
+                     >
+
+
+                     <TextView
+                         android:text="全部航空公司"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:id="@+id/all_airpot_line"
+                         android:gravity="center"
+                         android:textColor="@color/black"
+                         android:textSize="16sp"
+                         android:layout_centerVertical="true"
+                         android:layout_centerHorizontal="true" />
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:background="@mipmap/bg_start"
+                     android:layout_marginRight="3dp"
+                     >
+                     <TextView
+                         android:text="全部机票"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:gravity="center"
+                         android:id="@+id/policy_forcomany_txt"
+                         android:textColor="@color/black"
+                         android:textSize="16sp"
+                         android:layout_centerVertical="true"
+                         android:layout_centerHorizontal="true" />
+                 </RelativeLayout>
+
+             </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_bar_height_45"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="@dimen/font_size_16"
+
+                >
+
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/search_btn_anim"
+                    android:onClick="searchAirBtn"
+                    android:id="@+id/search_airpot_btn" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+
+       </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

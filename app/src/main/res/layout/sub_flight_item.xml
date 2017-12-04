@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/them_app_bg"
+    >
+    <RelativeLayout
+        android:id="@+id/sub_item_lay"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginLeft="@dimen/font_size_5"
+        android:layout_marginRight="@dimen/font_size_5"
+        android:background="@drawable/violate_can_order">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/font_size_14"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/TypeName_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|bottom"
+                android:text="折扣公务舱 98折"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/RefundChange_btn_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical"
+                android:text="退改签政策详情>"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/BaggageAllowance_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|top"
+                android:text="免费行李限额30KG"
+                android:textColor="@color/gray_color"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/FareTypeName_txt"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:background="@color/main_color_yellow"
+            android:text="三方协议价"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/font_size_10"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sub_order_flight"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/font_size_10"
+            android:textColor="@color/white"
+            android:background="@color/main_color_yellow"
+            android:text="预订" />
+
+        <TextView
+            android:id="@+id/Cabin_price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/font_size_10"
+            android:layout_toLeftOf="@+id/sub_order_flight"
+            android:layout_toStartOf="@+id/sub_order_flight"
+            android:text="¥1120"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

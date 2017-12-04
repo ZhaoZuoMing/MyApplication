@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_tab_top"
+        style="@style/layout_title" >
+
+        <TextView
+            android:id="@+id/emergency_title_txt"
+            style="@style/text_view_title"
+            android:text="@string/emergency_ticket_title_txt" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/main_tab_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/main_tab_top"
+        android:background="@mipmap/all_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/flight_bg_color"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ticket_reason_layout"
+                style="@style/fill_mutiple_line_padding_style"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/urgent_reason_txt"
+                    style="@style/edit_text_round_border"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dip"
+                    android:layout_marginTop="5dip"
+                    android:gravity="top" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resend_mail_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/suffix_audit_email_layout"
+                    style="@style/fill_one_line_padding_style"
+                    android:visibility="visible" >
+
+                    <EditText
+                        android:id="@+id/audit_email_prefix_txt"
+                        style="@style/edit_text_no_boder"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:hint="@string/edit_text_hint"
+                        android:textColor="@color/flight_gray_txt_color" />
+
+                    <TextView
+                        android:id="@+id/email_suffix"
+                        style="@style/single_line_title_txt"
+                        android:textColor="@color/flight_blue_txt_color" />
+
+                    <TextView
+                        android:id="@+id/audit_email_suffix_txt"
+                        style="@style/single_line_title_txt"
+                        android:text="@string/select_mail_type_txt"
+                        android:textColor="@color/flight_blue_txt_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/no_suffix_audit_email_layout"
+                    style="@style/fill_one_line_padding_style"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@+id/no_suffix_audit_email_txt"
+                        style="@style/edit_text_no_boder"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:hint="@string/edit_text_hint"
+                        android:textColor="@color/flight_gray_txt_color" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/one_line_color_layout_style" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/check_btn"
+                style="@style/text_button_black"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/login_btn_style"
+                android:text="@string/check_btn_txt" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
