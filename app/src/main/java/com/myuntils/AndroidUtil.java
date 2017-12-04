@@ -22,7 +22,7 @@ import f.sky.flight.core.Constants;
  */
 
 public class AndroidUtil {
-
+   //hahah
     /**
      * 判断网络是否可用
      * @param activity
